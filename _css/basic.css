@@ -1,3 +1,23 @@
+@font-face {
+  font-family: mySerif;
+  src: url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+}
+
+@font-face {
+  font-family: mySans;
+  src: url('https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap');
+}
+
+@font-face {
+  font-family: myMono;
+  src: url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+}
+
+@font-face {
+  font-family: myCode;
+  src: url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+}
+
 /* ==================================================================
     Header and Nav
 ================================================================== */

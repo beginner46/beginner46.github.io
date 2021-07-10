@@ -1,5 +1,7 @@
 @def title = "Franklin Example"
 @def tags = ["syntax", "code"]
+@def hascode = true
+@def hasmath = true
 
 # How to use Franklin
 

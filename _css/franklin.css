@@ -7,6 +7,7 @@
   --small: 14px;
   --normal: 19px;
   --text-color: hsv(0, 0%, 20%);
+  --link-color: #0838bd;
 }
 
 /* ==================================================================
@@ -79,6 +80,7 @@ html {
 }
 
 .franklin-content {
+  font-family: mySerif, serif;
   position: relative;
   padding-left: 12.5%;
   padding-right: 12.5%;
@@ -106,8 +108,8 @@ html {
     TITLES
 ================================================================== */
 
-.franklin-content h1 { font-size: 24px; }
-.franklin-content h2 { font-size: 22px; }
+.franklin-content h1 { font-size: 28px; }
+.franklin-content h2 { font-size: 24px; }
 .franklin-content h3 { font-size: 20px; }
 
 .franklin-content h1,
@@ -116,7 +118,10 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: mySans, sans-serif;
+  font-weight: lighter;
   text-align: left;
+  line-height: 50px;
 }
 
 .franklin-content h1 {
@@ -186,7 +191,7 @@ td {
 }
 
 .franklin-content a {
-  color: #004de6;
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -259,6 +264,10 @@ body { counter-reset: eqnum; }
 
 .katex { font-size: 1em !important; }
 
+.katex-display {
+  margin: 50px 0px;
+}
+
 .katex-display .katex {
   /* Overwrite KaTeX settings. */
   display: inline-block;
@@ -280,8 +289,10 @@ body { counter-reset: eqnum; }
 ================================================================== */
 
 code {
+  font-family: myCode, monospace;
   background-color: var(--block-background);
   padding: 0.1em 0.2em;
+  border: dotted 1px;
   border-radius: 2px;
   font-size: var(--small);
 }
