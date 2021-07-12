@@ -1,3 +1,5 @@
+using Dates
+
 function hfun_bar(vname)
   val = Meta.parse(vname[1])
   return round(sqrt(val), digits=2)
@@ -13,4 +15,8 @@ function lx_baz(com, _)
   brace_content = Franklin.content(com.braces[1]) # input string
   # do whatever you want here
   return uppercase(brace_content)
+end
+
+function hfun_yearnow()
+  return string(year(today()))
 end
