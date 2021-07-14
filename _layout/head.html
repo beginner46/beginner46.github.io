@@ -6,9 +6,13 @@
   {{if hasmath}} {{insert head_katex.html }}     {{end}}
   {{if hascode}} {{insert head_highlight.html }}   {{end}}
   <link rel="stylesheet" href="/css/franklin.css">
-  <link rel="stylesheet" href="/css/mySite.css">
+  <link rel="stylesheet" href="/css/my_styles.css">
   <link rel="icon" href="/assets/favicon.png">
   {{isdef title}} <title>{{fill title}}</title>  {{end}}
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lexend&family=Lora&family=STIX+Two+Math&family=Special+Elite&family=Work+Sans&display=swap');
+  </style>  
 </head>
 <body>
   {{insert header.html}}

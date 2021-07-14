@@ -11,11 +11,6 @@ mintoclevel = 2
 # Base files such as LICENSE.md and README.md are ignored by default.
 ignore = ["node_modules/"]
 
-# RSS (the website_{title, descr, url} must be defined to get RSS)
-generate_rss = false
-website_title = "JaydevSR"
-website_descr = "Personal Website of Jaydev Singh Rao"
-website_url   = "https://jaydevsr.github.io/"
 +++
 
 <!--

@@ -1,8 +1,4 @@
-@def title = "Franklin Example"
-@def tags = ["syntax", "code"]
-@def hascode = true
-@def hasmath = true
-
+@def title = "Home | JaydevSR"
 # How to use Franklin
 
 \tableofcontents <!-- you can use \toc as well -->

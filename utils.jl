@@ -17,6 +17,7 @@ function lx_baz(com, _)
   return uppercase(brace_content)
 end
 
-function hfun_yearnow()
-  return string(year(today()))
+
+function hfun_getyear()
+  return year(today())
 end

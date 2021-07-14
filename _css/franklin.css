@@ -7,7 +7,6 @@
   --small: 14px;
   --normal: 19px;
   --text-color: hsv(0, 0%, 20%);
-  --link-color: #0838bd;
 }
 
 /* ==================================================================
@@ -80,7 +79,6 @@ html {
 }
 
 .franklin-content {
-  font-family: mySerif, serif;
   position: relative;
   padding-left: 12.5%;
   padding-right: 12.5%;
@@ -90,7 +88,7 @@ html {
 /* On wide screens, fix content width to a max value. */
 @media (min-width: 940px) {
   .franklin-content {
-    width: 705px;
+    width: 850px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -118,24 +116,28 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: mySans, sans-serif;
+  font-family: 'Lexend', sans-serif;
   font-weight: lighter;
   text-align: left;
-  line-height: 50px;
 }
 
 .franklin-content h1 {
   padding-bottom: 0.5em;
   border-bottom: 3px double lightgrey;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
 }
 
 .franklin-content h2 {
   padding-bottom: 0.3em;
   border-bottom: 1px solid lightgrey;
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+}
+
+.franklin-content h3 {
+  margin-top: 2em;
+  margin-bottom: 1.5em;
 }
 
 .franklin-content h1 a { color: inherit; }
@@ -157,7 +159,9 @@ h6 {
   border-collapse: collapse;
   text-align: center;
 }
-
+.franklin-toc {
+  font-family: 'Work Sans';
+}
 .franklin-toc ol ol {
   list-style-type: lower-alpha;
 }
@@ -191,12 +195,16 @@ td {
 }
 
 .franklin-content a {
-  color: var(--link-color);
+  color: #004de6;
   text-decoration: none;
 }
 
 .franklin-content a:hover {
   text-decoration: underline;
+}
+
+.franklin-content p {
+  font-family: 'Lora', serif;
 }
 
 /* ==================================================================
@@ -236,6 +244,7 @@ td {
 
 .franklin-content .fndef td.fndef-content {
   font-size: 80%;
+  font-family: 'Stix Two Math', sans-serif;
   padding-left: 10px;
   width: 100%;
 }
@@ -264,10 +273,6 @@ body { counter-reset: eqnum; }
 
 .katex { font-size: 1em !important; }
 
-.katex-display {
-  margin: 50px 0px;
-}
-
 .katex-display .katex {
   /* Overwrite KaTeX settings. */
   display: inline-block;
@@ -289,11 +294,12 @@ body { counter-reset: eqnum; }
 ================================================================== */
 
 code {
-  font-family: myCode, monospace;
+  font-family: 'Fira Code', monospace;
   background-color: var(--block-background);
   padding: 0.1em 0.2em;
-  border: dotted 1px;
-  border-radius: 2px;
+  border: dotted;
+  border-width: 1px;
+  border-radius: 3px;
   font-size: var(--small);
 }
 
