@@ -261,20 +261,20 @@ On narrow device, reduce margins.
 
 
 /* ==================================================================
-    Blog
+    Pages
 ================================================================== */
  
-.blog-title h1 {
+.page-title h1 {
   text-align: center;
   border: none;
   font-family: 'Special Elite';
   font-size: 40px;
   padding: 0;
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.blog-title p {
+.page-title p {
   font-size: smaller;
 }
 
@@ -290,7 +290,7 @@ On narrow device, reduce margins.
 
 .typing-demo {
   width: 8ch;
-  animation: typing 1s steps(15), blink .5s step-end infinite alternate;
+  animation: typing 1s steps(8), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid;
@@ -307,6 +307,92 @@ On narrow device, reduce margins.
 @keyframes blink {
   50% {
     border-color: transparent
+  }
+}
+
+
+/* Construction Effect */
+
+.constructed {
+  position: relative;
+  height: 1em;
+  color: transparent;
+  line-height: 1.03em;
+}
+
+.constructed > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: black;
+  pointer-events: none;
+}
+
+.constructed > div:nth-child(1) {
+  -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+  mask-image: linear-gradient(black 25%, transparent 25%);
+  animation: constructed1 5s ;
+}
+
+.constructed > div:nth-child(2) {
+  -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  animation: constructed2 5s ;
+}
+
+.constructed > div:nth-child(3) {
+   -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  animation: constructed3 5s ;
+}
+
+.constructed > div:nth-child(4) {
+   -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+  mask-image: linear-gradient(transparent 75%, black 75%);
+  animation: constructed4 5s ;
+}
+
+@keyframes constructed1 {
+  0% {
+    transform: translateX(100%);
+  }
+  26% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes constructed2 {
+  0% {
+    transform: translateX(100%);
+  }
+  24% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes constructed3 {
+  0% {
+    transform: translateX(100%);
+  }
+  22% {
+    transform: translateX(0%);
+  }
+  81% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes constructed4 {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(0%);
   }
 }
 

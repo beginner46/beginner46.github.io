@@ -2,10 +2,9 @@
 @def tags = ["all"]
 
 ~~~
-<div class="wrapper blog-title">
+<div class="wrapper page-title">
     <div class="typing-demo">
       <h1>Weblogs.</h1>
     </div>
 </div>
-
 ~~~
