@@ -1,12 +1,11 @@
 @def title="Weblogs | Jaydev Singh Rao"
 @def tags = ["all"]
 
-@@blog-home
+~~~
+<div class="wrapper blog-title">
+    <div class="typing-demo">
+      <h1>Weblogs.</h1>
+    </div>
+</div>
 
-@@blog-title
-    # Weblogs
-    Logs and notes for future use.
-@@
----
-Hello
-@@
+~~~
