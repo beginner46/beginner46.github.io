@@ -1,24 +1,41 @@
 /* ==================================================================
-    Header and Nav
+    Side Bar
 ================================================================== */
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 66.5rem) / 2 + 264px);
+  min-width: 300px;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  float: left;
+  background-color: var(--col-c);
+  justify-content: center;
+}
+
 
 nav {
   width: 64%;
-  display: inline-block;
+  display: block;
 }
 
 nav ul {
   padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 nav li {
-  display: inline-block;
+  display: block;
+  margin: 20px 0px;
 }
 
 nav li a {
-  color: #004de6;
+  color: var(--col-b);
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -30,13 +47,13 @@ nav li a {
   padding-bottom: 5px;
   margin-left: 7px;
   margin-right: 7px;
-  border-bottom: 2px solid #4c9cf1;
+  /* border-bottom: 2px solid #4c9cf1; */
   transition: color 0.3s ease;
 }
 
 header {
-  text-align: right;
-  margin-top: 50px;
+  text-align: center;
+  margin-top: 0px;
   margin-bottom: 50px;
   display: flex;
   align-items: center;
@@ -45,15 +62,18 @@ header {
 header .blog-name {
   width: 35%;
   display: inline-block;
-  text-align: left;
-  font-size: 18px;
-  font-family: "Lucida Console", Monaco, monospace;
-  padding-top: 10px;
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Special Elite", Monaco, monospace;
 }
 
 header .blog-name a {
   color: #a6a2a0;
   text-decoration: none;
+}
+
+header .blog-name a:hover {
+  color: black;
 }
 
 header li a:hover {
@@ -65,7 +85,7 @@ header li a:hover {
   display: none;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   header {
     padding-left: 6%;
     padding-right: 6%;
@@ -77,21 +97,21 @@ header li a:hover {
     padding-left: 12.5%;
     padding-right: 12.5%;
   }
-}
+} */
 
 /* wide display: enforce maximum width of header to match content */
-@media (min-width: 940px) {
+/* @media (min-width: 940px) {
   header {
     width: 705px;
     margin-left: auto;
     margin-right: auto;
   }
-}
+} */
 
 /*
 medium display: nav goes under name
 */
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
   header { display: block; }
 
   header .blog-name {
@@ -103,7 +123,7 @@ medium display: nav goes under name
   nav {
     width: 100%;
   }
-}
+} */
 
 /*
 narrow display: collapse the header (don't show the menu items)
@@ -189,25 +209,119 @@ table tbody tr td {
   border: 1px solid lightgray;
 }
 
-.blog-home {
-  background-color: aliceblue;
-  border-radius: 1em;
-  padding: 1em;
-}
-.blog-title {
+.side-bar .copyright {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  font-size: 60%;
+  font-family: 'Courier New', Courier, monospace, serif;
+  color: var(--col-a);
   text-align: center;
-  padding: 1em;
+  border-top: 2px dotted lightgrey;
 }
 
+.side-bar .copyright a {
+  text-decoration: none;
+  color: #a6a2a0;
+  text-decoration: underline;
+}
+
+/* ==================================================================
+    Content
+================================================================== */
+
+.franklin-content {
+  position: relative;
+  bottom: 0;
+  min-height: 100vh;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-left: calc((100% - 1064px) / 2 + 264px);
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  line-height: 1.35em;
+}
+
+/* On wide screens, fix content width to a max value.
+@media (min-width: 940px) {
+  .franklin-content {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+On narrow device, reduce margins.
+@media (max-width: 480px) {
+  .franklin-content {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}*/
+
+
+/* ==================================================================
+    Blog
+================================================================== */
+ 
 .blog-title h1 {
   text-align: center;
   border: none;
   font-family: 'Special Elite';
   font-size: 40px;
   padding: 0;
-  margin-top: 1em;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 .blog-title p {
   font-size: smaller;
+}
+
+
+/* Typing Effect */
+
+.wrapper {
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 8ch;
+  animation: typing 1s steps(15), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+/* ==================================================================
+    Other Styles
+================================================================== */
+
+hr {
+  border: dashed;
+  border-width: 2px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.inline-img {
+  width: var(--normal);
+  height: var(--normal);
 }
