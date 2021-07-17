@@ -15,18 +15,21 @@
   float: left;
   background-color: var(--col-c);
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 
 nav {
   width: 64%;
   display: block;
+  overflow-y: auto;
 }
 
 nav ul {
   padding-left: 0;
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 nav li {
@@ -51,32 +54,25 @@ nav li a {
   transition: color 0.3s ease;
 }
 
-header {
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  display: flex;
-  align-items: center;
-}
-
-header .blog-name {
+.side-bar .blog-name {
   width: 35%;
+  margin: 50px auto;
   display: inline-block;
   text-align: center;
   font-size: xx-large;
   font-family: "Special Elite", Monaco, monospace;
 }
 
-header .blog-name a {
+.side-bar .blog-name a {
   color: #a6a2a0;
   text-decoration: none;
 }
 
-header .blog-name a:hover {
+.side-bar .blog-name a:hover {
   color: black;
 }
 
-header li a:hover {
+.side-bar li a:hover {
   color: black;
   border-bottom: 2px solid black;
 }
@@ -211,12 +207,13 @@ table tbody tr td {
 
 .side-bar .copyright {
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   display: block;
+  margin-top: 10px;
+  padding: 10px;
   font-size: 60%;
   font-family: 'Courier New', Courier, monospace, serif;
   color: var(--col-a);
-  text-align: center;
   border-top: 2px dotted lightgrey;
 }
 
@@ -224,6 +221,24 @@ table tbody tr td {
   text-decoration: none;
   color: #a6a2a0;
   text-decoration: underline;
+}
+
+.side-bar .social-tab {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.side-bar .social-tab i {
+  font-size: 2rem;
+  color: var(--col-b);
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.side-bar .social-tab i:hover {
+  color: black;
+  font-size: 1.5rem;
 }
 
 /* ==================================================================
