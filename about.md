@@ -1,4 +1,4 @@
-@def title="About Me | Jaydev Singh Rao"
+@def title="About Me | JaydevSR"
 
 ~~~
 <div class="wrapper page-title">

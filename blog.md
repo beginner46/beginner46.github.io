@@ -1,4 +1,4 @@
-@def title="Weblogs | Jaydev Singh Rao"
+@def title="My Blog | JaydevSR"
 @def tags = ["all"]
 
 ~~~
