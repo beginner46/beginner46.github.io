@@ -13,7 +13,7 @@
   padding: 0;
   margin: 0;
   float: left;
-  background-color: var(--col-c);
+  background-image: linear-gradient(to top, var(--col-d), var(--col-c));
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -43,14 +43,14 @@ nav li a {
   font-size: 18px;
   font-weight: bold;
   display: inline-block;
-  float: center;
+  /* float: center; */
   padding-top: 10px;
   padding-right: 2px;
   padding-left: 2px;
   padding-bottom: 5px;
   margin-left: 7px;
   margin-right: 7px;
-  /* border-bottom: 2px solid #4c9cf1; */
+  border-bottom: 2px solid transparent;
   transition: color 0.3s ease;
 }
 
@@ -231,15 +231,19 @@ table tbody tr td {
 
 .side-bar .social-tab i {
   font-size: 2rem;
-  color: var(--col-b);
   display: inline-block;
-  margin: 0px 10px;
+  margin: 0px 1rem;
+  transition: font-size 0.5s, margin 0.5s;
 }
 
 .side-bar .social-tab i:hover {
-  color: black;
   font-size: 1.5rem;
+  margin: 0 1.25rem;
 }
+
+.side-bar .social-tab i:not(:hover) {
+  color: var(--col-b);
+} 
 
 /* ==================================================================
     Content
@@ -370,44 +374,110 @@ On narrow device, reduce margins.
 }
 
 @keyframes constructed1 {
-  0% {
+  5% {
     transform: translateX(100%);
+    opacity: 0%;
   }
-  26% {
-    transform: translateX(0%);
+  10% {
+    transform: translateX(-50%);
+    opacity: 50%;
+  }
+  15% {
+    transform: translateX(25%);
+    opacity: 75%;
+  }
+  20% {
+    transform: translateX(-12.5%);
+    opacity: 87.5%;
+  }
+  25% {
+    transform: translateX(6.25%);
+    opacity: 93.75%;
+  }
+  30% {
+    transform: translateX(0);
+    opacity: 100%;
   }
 }
 
 @keyframes constructed2 {
-  0% {
-    transform: translateX(100%);
+  5% {
+    transform: translateX(-100%);
+    opacity: 0%;
   }
-  24% {
+  10% {
+    transform: translateX(50%);
+    opacity: 50%;
+  }
+  15% {
+    transform: translateX(-25%);
+    opacity: 75%;
+  }
+  20% {
+    transform: translateX(12.5%);
+    opacity: 87.5%;
+  }
+  25% {
+    transform: translateX(-6.25%);
+    opacity: 93.75%;
+  }
+  30% {
     transform: translateX(0%);
+    opacity: 100%;
   }
 }
 
 @keyframes constructed3 {
-  0% {
+  5% {
     transform: translateX(100%);
+    opacity: 0%;
   }
-  22% {
-    transform: translateX(0%);
+  10% {
+    transform: translateX(-50%);
+    opacity: 50%;
   }
-  81% {
-    transform: translateX(0%);
+  15% {
+    transform: translateX(25%);
+    opacity: 75%;
+  }
+  20% {
+    transform: translateX(-12.5%);
+    opacity: 87.5%;
+  }
+  25% {
+    transform: translateX(6.25%);
+    opacity: 93.75%;
+  }
+  30% {
+    transform: translateX(0);
+    opacity: 100%;
   }
 }
 
 @keyframes constructed4 {
-  0% {
-    transform: translateX(100%);
+  5% {
+    transform: translateX(-100%);
+    opacity: 0%;
+  }
+  10% {
+    transform: translateX(50%);
+    opacity: 50%;
+  }
+  15% {
+    transform: translateX(-25%);
+    opacity: 75%;
   }
   20% {
-    transform: translateX(0%);
+    transform: translateX(12.5%);
+    opacity: 87.5%;
   }
-  80% {
+  25% {
+    transform: translateX(-6.25%);
+    opacity: 93.75%;
+  }
+  30% {
     transform: translateX(0%);
+    opacity: 100%;
   }
 }
 
@@ -415,11 +485,14 @@ On narrow device, reduce margins.
     Other Styles
 ================================================================== */
 
-hr {
+hr.page-end-line {
   border: dashed;
   border-width: 2px;
   margin-top: 40px;
   margin-bottom: 60px;
+  color: gray;
+  background-color: var(--col-a);
+  opacity: 100%;
 }
 
 .inline-img {
