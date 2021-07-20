@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   width: calc((100% - 66.5rem) / 2 + 264px);
-  min-width: 300px;
+  min-width: 264px;
   height: 100vh;
   padding: 0;
   margin: 0;
@@ -21,7 +21,7 @@
 
 
 nav {
-  width: 64%;
+  width: 100%;
   display: block;
   overflow-y: auto;
 }
@@ -55,7 +55,6 @@ nav li a {
 }
 
 .side-bar .blog-name {
-  width: 35%;
   margin: 50px auto;
   display: inline-block;
   text-align: center;
@@ -64,7 +63,7 @@ nav li a {
 }
 
 .side-bar .blog-name a {
-  color: #a6a2a0;
+  color: lightgray;
   text-decoration: none;
 }
 
@@ -79,102 +78,6 @@ nav li a {
 
 #menu-icon {
   display: none;
-}
-
-/* @media (max-width: 480px) {
-  header {
-    padding-left: 6%;
-    padding-right: 6%;
-  }
-}
-
-@media (min-width: 481px) {
-  header {
-    padding-left: 12.5%;
-    padding-right: 12.5%;
-  }
-} */
-
-/* wide display: enforce maximum width of header to match content */
-/* @media (min-width: 940px) {
-  header {
-    width: 705px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-} */
-
-/*
-medium display: nav goes under name
-*/
-/* @media (max-width: 760px) {
-  header { display: block; }
-
-  header .blog-name {
-    display: block;
-    width: 100%;
-    padding-bottom: 10px;
-  }
-
-  nav {
-    width: 100%;
-  }
-} */
-
-/*
-narrow display: collapse the header (don't show the menu items)
-instead, display a burger menu.
-*/
-@media (max-width: 500px) {
-  header {
-    height: 35px;
-    display: flex;
-    align-items: center;
-  }
-
-  header .blog-name {
-    display: inline-block;
-    width: 70%;
-  }
-
-  nav {
-    display: inline-block;
-    width: 27%;
-  }
-
-  nav ul,
-  nav:active ul {
-    display: none;
-    position: absolute;
-
-    /* padding: 20px; */
-    background: #fff;
-    border: 1px solid #444;
-    right: 50px;
-    top: 60px;
-    width: 30%;
-    border-radius: 4px 0 4px 4px;
-    z-index: 1;
-  }
-
-  nav li {
-    text-align: left;
-    display: block;
-    padding: 0;
-    margin: 0;
-  }
-  header li a { border-bottom: none; }
-  header li a:hover { border-bottom: none; }
-
-  nav:hover ul {
-    display: block;
-  }
-
-  #menu-icon {
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 5px;
-  }
 }
 
 table {
@@ -203,6 +106,18 @@ td {
 
 table tbody tr td {
   border: 1px solid lightgray;
+}
+
+.copyright-bottom {
+  display: none;
+  width: auto;
+  margin-top: 10px;
+  padding-top: 20px;
+  font-size: 70%;
+  font-family: 'Courier New', Courier, monospace, serif;
+  color: var(--col-d);
+  text-align: center;
+  border-top: 2px dotted grey;
 }
 
 .side-bar .copyright {
@@ -243,7 +158,124 @@ table tbody tr td {
 
 .side-bar .social-tab i:not(:hover) {
   color: var(--col-b);
-} 
+}
+
+/*
+medium display: .side-bar goes on top
+*/
+@media (max-width: 880px) {
+  .side-bar {
+    float: none;
+    height: auto;
+    width: 100%;
+    position: static;
+    flex-direction: row;
+    background-image: linear-gradient(to right, var(--col-c), var(--col-d));
+    background-color: var(--col-c);
+    text-align: right;
+  }
+
+  .side-bar nav {
+    margin-right: 0px;
+    float: right;
+    width: 60%;
+  }
+
+  .side-bar nav ul {
+    margin: 0px;
+  }
+
+  .side-bar nav ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .side-bar .social-tab {
+    margin: auto;
+    display: none;
+  }
+
+  .side-bar .social-tab i {
+    display: inline;
+  }
+
+  .side-bar .blog-name {
+    margin: 0 50px;
+  }
+
+  .side-bar .copyright {
+    display: none;
+  }
+
+  .copyright-bottom {
+    display: block;
+  }
+
+  .page-end-line {
+    display: none;
+  }
+}
+
+/*
+narrow display: collapse the header (don't show the menu items)
+instead, display a burger menu.
+*/
+@media (max-width: 580px) {
+  header.side-bar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+  }
+
+  header.side-bar .blog-name {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+  }
+
+  .side-bar nav {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  nav ul,
+  nav:active ul {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to left, var(--col-d), var(--col-c));
+    right: 0px;
+    top: 75px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav li {
+    text-align: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  header li a { border-bottom: none; }
+  header li a:hover { border-bottom: none; }
+
+  nav:hover ul {
+    display: block;
+  }
+
+  #menu-icon {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.5s;
+  }
+
+  nav:hover #menu-icon {
+    transform: rotate(90deg);
+  }
+}
+ 
 
 /* ==================================================================
     Content
@@ -253,35 +285,36 @@ table tbody tr td {
   position: relative;
   bottom: 0;
   min-height: 100vh;
-  margin-top: 70px;
-  margin-right: auto;
-  margin-left: calc((100% - 1064px) / 2 + 264px);
+  margin-right: 0;
+  margin-left: calc((100% - 1197px) / 2 + 264px);
   padding-left: 12.5%;
   padding-right: 12.5%;
   line-height: 1.35em;
+  margin-top: 70px;
 }
 
-/* On wide screens, fix content width to a max value.
-@media (min-width: 940px) {
+@media (max-width: 1197px) {
   .franklin-content {
-    width: 850px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 264px;
   }
 }
 
-On narrow device, reduce margins.
-@media (max-width: 480px) {
+
+@media (max-width: 880px) {
   .franklin-content {
-    padding-left: 6%;
-    padding-right: 6%;
+    margin-left: 0px;
+    min-height: auto;
   }
-}*/
+}
 
 
 /* ==================================================================
     Pages
 ================================================================== */
+
+.page-title {
+  margin-top: 20px;
+}
  
 .page-title h1 {
   text-align: center;
@@ -289,8 +322,8 @@ On narrow device, reduce margins.
   font-family: 'Special Elite';
   font-size: 40px;
   padding: 0;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .page-title p {
@@ -498,4 +531,10 @@ hr.page-end-line {
 .inline-img {
   width: var(--normal);
   height: var(--normal);
+}
+
+.franklin-content .inline-img {
+  height: var(--normal);
+  width: auto;
+  padding: 0px 5px;
 }
