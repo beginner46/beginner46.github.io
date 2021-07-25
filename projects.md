@@ -2,12 +2,8 @@
 
 ~~~
 <div class="wrapper page-title">
-    <h1 class="constructed">
+    <h1>
         Projects.
-        <div>Projects.</div>
-        <div>Projects.</div>
-        <div>Projects.</div>
-        <div>Projects.</div>
     </h1> 
 </div>
 ~~~

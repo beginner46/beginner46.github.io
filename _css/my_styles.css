@@ -35,7 +35,6 @@ nav ul {
 
 nav li {
   display: block;
-  margin: 20px 0px;
 }
 
 nav li a {
@@ -49,22 +48,21 @@ nav li a {
   padding-right: 2px;
   padding-left: 2px;
   padding-bottom: 5px;
-  margin-left: 7px;
-  margin-right: 7px;
+  margin: 20px 15px;
   border-bottom: 2px solid transparent;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, font-size 0.3s ease, margin 0.3s ease;
 }
 
 .side-bar .blog-name {
   margin: 50px auto;
   display: inline-block;
   text-align: center;
-  font-size: xx-large;
-  font-family: "Special Elite", Monaco, monospace;
+  font-size: 40px;
+  font-family: "Fredericka the Great", Monaco, monospace;
 }
 
 .side-bar .blog-name a {
-  color: lightgray;
+  color: white;
   text-decoration: none;
 }
 
@@ -75,6 +73,8 @@ nav li a {
 .side-bar li a:hover {
   color: black;
   border-bottom: 2px solid black;
+  font-size: 20px;
+  margin: 18px 15px 18px 15px;
 }
 
 #menu-icon {
@@ -169,15 +169,15 @@ medium display: .side-bar goes on top
     float: none;
     height: auto;
     width: 100%;
-    position: static;
+    position: sticky;
     flex-direction: row;
     background-image: linear-gradient(to right, var(--col-c), var(--col-d));
-    background-color: var(--col-c);
     text-align: right;
+    z-index: 1;
   }
 
   .side-bar nav {
-    margin-right: 0px;
+    margin-right: 20px;
     float: right;
     width: 60%;
   }
@@ -231,6 +231,8 @@ instead, display a burger menu.
 
   header.side-bar .blog-name {
     display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 80%;
     text-align: left;
   }
@@ -257,23 +259,29 @@ instead, display a burger menu.
     text-align: left;
     display: block;
     padding: 0;
-    margin: 0;
+    margin: 0 10px 0 10px;
   }
-  header li a { border-bottom: none; }
-  header li a:hover { border-bottom: none; }
 
+  .side-bar li a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    margin: 18px 12px 18px 12px;
+  }
+ 
+  /*
   nav:hover ul {
     display: block;
-  }
+  }*/
 
   #menu-icon {
     display: inline-block;
     margin-right: 10px;
-    transition: transform 0.5s;
+    transition: transform 1s;
   }
 
-  nav:hover #menu-icon {
-    transform: rotate(90deg);
+  #menu-icon:hover {
+    transform: rotate(360deg);
   }
 }
  
@@ -291,7 +299,6 @@ instead, display a burger menu.
   padding-left: 12.5%;
   padding-right: 12.5%;
   line-height: 1.35em;
-  margin-top: 70px;
 }
 
 @media (max-width: 1197px) {
@@ -314,7 +321,8 @@ instead, display a burger menu.
 ================================================================== */
 
 .page-title {
-  margin-top: 20px;
+  margin-top: 0px;
+  padding-top: 30px;
 }
  
 .page-title h1 {

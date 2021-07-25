@@ -3,7 +3,7 @@
 
 ~~~
 <div class="wrapper page-title">
-    <div class="typing-demo">
+    <div class="">
       <h1>Weblogs.</h1>
     </div>
 </div>
