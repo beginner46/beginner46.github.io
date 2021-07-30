@@ -238,7 +238,7 @@ instead, display a burger menu.
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    height: 200px;
+    height: 220px;
   }
 
   .side-bar .blog-name {
