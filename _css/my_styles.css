@@ -49,8 +49,11 @@ nav li a {
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 5px;
-  margin: 10px 10px;
+  margin: 8px 10px;
   border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+  min-width: 118px;
+  text-align: center;
 }
 
 .side-bar .blog-name {
@@ -67,46 +70,15 @@ nav li a {
 
 .side-bar .blog-name a:hover {
   color: black;
-  transform: rotateX(180deg);
 }
 
 .side-bar li a:hover {
-  color: slategray;
+  color: var(--col-d);
   border-bottom: 2px solid var(--col-d);
   border-right: 2px solid var(--col-d);
-  margin-right: 8px;
-  background: linear-gradient(100deg, transparent, transparent, transparent, transparent, #ee7752, #e73c7e, #23a6d5, #23d5ab, transparent, transparent, transparent, transparent);
-  background-size: 400% 400%;
-	animation: gradient-back 6s linear infinite;
+  border-radius: 2px;
 }
 
-@keyframes gradient-back {
-	0% {
-		background-position: 0% 0%;
-    color: var(--col-d);
-    border-color: var(--col-a);
-	}
-  20% {
-		background-position: 25% 25%;
-    color: var(--col-b);
-    border-color: var(--col-b);
-	}
-  50% {
-    background-position: 50% 50%;
-    color: var(--col-a);
-    border-color: var(--col-d);
-  }
-  75% {
-    background-position: 75% 75%;
-    color: var(--col-b);
-    border-color: var(--col-b);
-  }
-  100% {
-    background-position: 100% 100%;
-    color: var(--col-d);
-    border-color: var(--col-a);
-  }
-}
 
 #menu-icon {
   display: none;
@@ -207,20 +179,26 @@ medium display: .side-bar goes on top
   }
 
   .side-bar nav {
+    width: 55%;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 100px;
+    margin-right: 50px;
   }
 
   .side-bar nav ul {
     margin: 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
   }
 
   .side-bar nav ul li {
     display: inline-block;
+  }
+
+  .side-bar nav ul li a {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .side-bar .social-tab {
@@ -233,8 +211,9 @@ medium display: .side-bar goes on top
   }
 
   .side-bar .blog-name {
-    margin-left: 100px;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 10px;
+    text-align: center;
   }
 
   .side-bar .copyright {
@@ -567,4 +546,53 @@ hr.page-end-line {
   .scroll-blur {
     height: 100px;
   }
+}
+
+.hover-gradient {
+  background: none;
+}
+
+.hover-gradient:hover {
+  background-image: linear-gradient(100deg, transparent, transparent, transparent, transparent, #ee7752, #e73c7e, #23a6d5, #23d5ab, transparent, transparent, transparent, transparent);
+  background-size: 400% 400%;
+	animation: gradient-back 6s linear infinite;
+}
+
+@keyframes gradient-back {
+	0% {
+		background-position: 0% 0%;
+    color: var(--col-d);
+    border-color: var(--col-a);
+	}
+  20% {
+		background-position: 25% 25%;
+    color: var(--col-b);
+    border-color: var(--col-b);
+	}
+  50% {
+    background-position: 50% 50%;
+    color: var(--col-a);
+    border-color: var(--col-d);
+  }
+  75% {
+    background-position: 75% 75%;
+    color: var(--col-b);
+    border-color: var(--col-b);
+  }
+  100% {
+    background-position: 100% 100%;
+    color: var(--col-d);
+    border-color: var(--col-a);
+  }
+}
+
+.expand-on-hover span {
+  display:inline-flex;
+  overflow: hidden;
+  width: 1px;
+  transition: width 1s ease;
+}
+
+.expand-on-hover:hover  span {
+  width: 100px;
 }
