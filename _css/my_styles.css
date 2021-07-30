@@ -21,7 +21,7 @@
 
 
 nav {
-  width: 50%;
+  width: 80%;
   margin-bottom: 150px;
   display: block;
   overflow-y: auto;
@@ -45,13 +45,12 @@ nav li a {
   font-weight: bold;
   display: inline-block;
   /* float: center; */
-  padding-top: 10px;
-  padding-right: 2px;
-  padding-left: 2px;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
   padding-bottom: 5px;
-  margin:0px 5px;
+  margin: 10px 10px;
   border-bottom: 2px solid transparent;
-  transition: color 0.3s ease-in-out;
 }
 
 .side-bar .blog-name {
@@ -68,11 +67,45 @@ nav li a {
 
 .side-bar .blog-name a:hover {
   color: black;
+  transform: rotateX(180deg);
 }
 
 .side-bar li a:hover {
-  color: var(--col-c);
-  border-bottom: 2px solid var(--col-c);
+  color: slategray;
+  border-bottom: 2px solid var(--col-d);
+  border-right: 2px solid var(--col-d);
+  margin-right: 8px;
+  background: linear-gradient(100deg, transparent, transparent, transparent, transparent, #ee7752, #e73c7e, #23a6d5, #23d5ab, transparent, transparent, transparent, transparent);
+  background-size: 400% 400%;
+	animation: gradient-back 6s linear infinite;
+}
+
+@keyframes gradient-back {
+	0% {
+		background-position: 0% 0%;
+    color: var(--col-d);
+    border-color: var(--col-a);
+	}
+  20% {
+		background-position: 25% 25%;
+    color: var(--col-b);
+    border-color: var(--col-b);
+	}
+  50% {
+    background-position: 50% 50%;
+    color: var(--col-a);
+    border-color: var(--col-d);
+  }
+  75% {
+    background-position: 75% 75%;
+    color: var(--col-b);
+    border-color: var(--col-b);
+  }
+  100% {
+    background-position: 100% 100%;
+    color: var(--col-d);
+    border-color: var(--col-a);
+  }
 }
 
 #menu-icon {
@@ -526,7 +559,7 @@ hr.page-end-line {
   bottom: 0;
   height: 200px;
   width: 100%;
-  background-image: linear-gradient(to top, var(--col-a), transparent);
+  background-image: linear-gradient(to top, var(--col-a), var(--col-a), transparent);
   z-index: 10;
 }
 
