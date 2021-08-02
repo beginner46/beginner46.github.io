@@ -82,21 +82,22 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lexend', sans-serif;
-  font-weight: lighter;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: bold;
   text-align: left;
 }
 
 .franklin-content h1 {
   padding-bottom: 0.5em;
-  border-bottom: 3px double lightgrey;
+  border-bottom: 4px solid lightgrey;
+  border-radius: 2px;
   margin-top: 2em;
   margin-bottom: 1.5em;
 }
 
 .franklin-content h2 {
   padding-bottom: 0.3em;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 2px dotted lightgrey;
   margin-top: 2em;
   margin-bottom: 1.5em;
 }
@@ -107,17 +108,17 @@ h6 {
 }
 
 .franklin-content h1 a { color: inherit; }
-.franklin-content h1 a:hover { text-decoration: none; }
+.franklin-content h1 a:hover { color: var(--col-c); text-decoration: none; }
 .franklin-content h2 a { color: inherit; }
-.franklin-content h2 a:hover { text-decoration: none; }
+.franklin-content h2 a:hover { color: var(--col-c); text-decoration: none; }
 .franklin-content h3 a { color: inherit; }
-.franklin-content h3 a:hover { text-decoration: none; }
+.franklin-content h3 a:hover { color: var(--col-c); text-decoration: none; }
 .franklin-content h4 a { color: inherit; }
-.franklin-content h4 a:hover { text-decoration: none; }
+.franklin-content h4 a:hover { color: var(--col-c); text-decoration: none; }
 .franklin-content h5 a { color: inherit; }
-.franklin-content h5 a:hover { text-decoration: none; }
+.franklin-content h5 a:hover { color: var(--col-c); text-decoration: none; }
 .franklin-content h6 a { color: inherit; }
-.franklin-content h6 a:hover { text-decoration: none; }
+.franklin-content h6 a:hover { color: var(--col-c); text-decoration: none; }
 
 .franklin-content table {
   margin-left: auto;
@@ -170,7 +171,7 @@ td {
 }
 
 .franklin-content p {
-  font-family: 'Lora', serif;
+  font-family: 'Libre Baskerville', 'Lora', serif;
 }
 
 /* ==================================================================

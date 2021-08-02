@@ -7,8 +7,8 @@
   left: 0;
   display: flex;
   flex-direction: column;
-  width: calc((100% - 66.5rem) / 2 + 264px);
-  min-width: 264px;
+  width: calc((100% - 1197px) / 2 + 280px);
+  min-width: 280px;
   height: 100vh;
   padding: 0;
   margin: 0;
@@ -22,7 +22,7 @@
 
 nav {
   width: 80%;
-  margin-bottom: 150px;
+  margin: 50px 0px;
   display: block;
   overflow-y: auto;
   font-family: 'Work Sans', sans-serif;
@@ -60,7 +60,7 @@ nav li a {
   display: inline-block;
   text-align: center;
   font-size: 40px;
-  font-family: "Fredericka the Great", Monaco, monospace;
+  font-family: "Major Mono Display", Monaco, monospace;
 }
 
 .side-bar .blog-name a {
@@ -69,7 +69,7 @@ nav li a {
 }
 
 .side-bar .blog-name a:hover {
-  color: black;
+  color: var(--col-c);
 }
 
 .side-bar li a:hover {
@@ -182,7 +182,7 @@ medium display: .side-bar goes on top
     width: 55%;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 50px;
+    margin-right: 10px;
   }
 
   .side-bar nav ul {
@@ -211,7 +211,7 @@ medium display: .side-bar goes on top
   }
 
   .side-bar .blog-name {
-    margin-left: 50px;
+    margin-left: 10px;
     margin-right: 10px;
     text-align: center;
   }
@@ -271,7 +271,7 @@ instead, display a burger menu.
   margin-top: 50px;
   margin-bottom: 20px;
   margin-right: 0;
-  margin-left: calc((100% - 1197px) / 2 + 264px);
+  margin-left: calc((100% - 1197px) / 2 + 280px);
   padding-left: 10%;
   padding-right: 10%;
   line-height: 1.35em;
@@ -279,7 +279,7 @@ instead, display a burger menu.
 
 @media (max-width: 1197px) {
   .franklin-content {
-    margin-left: 264px;
+    margin-left: 280px;
   }
 }
 
@@ -311,7 +311,7 @@ instead, display a burger menu.
 .page-title h1 {
   text-align: center;
   border: none;
-  font-family: 'Special Elite';
+  font-family: 'Space Mono';
   font-size: 40px;
   padding: 0;
   margin-top: 0.5em;
@@ -553,9 +553,10 @@ hr.page-end-line {
 }
 
 .hover-gradient:hover {
-  background-image: linear-gradient(100deg, transparent, transparent, transparent, transparent, #ee7752, #e73c7e, #23a6d5, #23d5ab, transparent, transparent, transparent, transparent);
+  /* background-image: linear-gradient(100deg, transparent, transparent, transparent, transparent, #ee7752, #e73c7e, #23a6d5, #23d5ab, transparent, transparent, transparent, transparent); */
+  background-image: linear-gradient(100deg, transparent, transparent, transparent, var(--col-b), var(--col-b), var(--col-b), transparent, transparent, transparent);
   background-size: 400% 400%;
-	animation: gradient-back 6s linear infinite;
+	animation: gradient-back 5s linear infinite;
 }
 
 @keyframes gradient-back {
@@ -566,18 +567,18 @@ hr.page-end-line {
 	}
   20% {
 		background-position: 25% 25%;
-    color: var(--col-b);
-    border-color: var(--col-b);
+    color: var(--col-c);
+    /* border-color: var(--col-b); */
 	}
   50% {
     background-position: 50% 50%;
-    color: var(--col-a);
+    color: var(--col-c);
     border-color: var(--col-d);
   }
   75% {
     background-position: 75% 75%;
-    color: var(--col-b);
-    border-color: var(--col-b);
+    color: var(--col-c);
+    /* border-color: var(--col-b); */
   }
   100% {
     background-position: 100% 100%;
@@ -586,13 +587,17 @@ hr.page-end-line {
   }
 }
 
-.expand-on-hover span {
-  display:inline-flex;
-  overflow: hidden;
-  width: 1px;
-  transition: width 1s ease;
-}
-
-.expand-on-hover:hover  span {
-  width: 100px;
+@media (min-width: 880px) {
+  .blog-name .expand-on-hover span {
+    display:inline-flex;
+    overflow: hidden;
+    width: 1px;
+    opacity: 0%;
+    transition: width 1s ease, opacity 1s ease;
+  }
+  
+  .blog-name .expand-on-hover:hover  span {
+    width: 150px;
+    opacity: 100%;
+  }
 }
