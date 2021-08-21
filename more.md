@@ -1,9 +1,9 @@
-@def title="About Me | JaydevSR"
+@def title="More Stuff | JaydevSR"
 
 ~~~
 <div class="wrapper page-title">
     <h1>
-        About Me.
+        More Important Things.
     </h1> 
 </div>
 ~~~
