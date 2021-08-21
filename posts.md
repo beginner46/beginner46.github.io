@@ -3,8 +3,12 @@
 
 ~~~
 <div class="wrapper page-title">
-    <div class="">
-      <h1>My Posts.</h1>
-    </div>
+    <h1>My Posts.</h1>
 </div>
 ~~~
+
+---
+
+@@img-small
+\figalt{random picture to fill the space}{/assets/images/random_gen_art.png}
+@@

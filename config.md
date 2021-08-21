@@ -18,3 +18,13 @@ Add here global latex commands to use throughout your pages.
 -->
 \newcommand{\R}{\mathbb R}
 \newcommand{\scal}[1]{\langle #1 \rangle}
+\newcommand{\danger}[1]{
+    ~~~
+    <span style="color: red;">#1</span>
+    ~~~
+    }
+\newcommand{\note}[1]{
+    ~~~
+    <span style="color: slategray;">#1</span>
+    ~~~
+    }

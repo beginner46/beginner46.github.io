@@ -223,13 +223,19 @@ td {
 .franklin-content img {
   width: 70%;
   text-align: center;
-  padding-left: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .franklin-content .img-small img {
   width: 50%;
   text-align: center;
-  padding-left: 20%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* ==================================================================
