@@ -3,18 +3,18 @@
 ~~~
 <div class="wrapper page-title">
     <h1>
-        Namaste!
+        Hello Stranger!
     </h1> 
 </div>
 ~~~
 
 ---
 
-- My name is _Jaydev Singh Rao_. 
+- My name is _Jaydev Singh Rao_ (Pronounced:  [[dʑɐj'deːʋ]](https://en.wikipedia.org/wiki/Help:IPA/Sanskrit)).
 - I am an undergraduate student in _Dept. EECS_ at _[IISER Bhopal](https://iiserb.ac.in/)_, which is a higher education institute in Bhopal, India.
 - I enjoy studying _Physics_ and _Computer Science_ and my academic interests lie at the bridge between these two domains.
-- I also like to create all sorts of things on my computer. This has led me to trying to learn computer graphics, shaders and generative art in my free time. I am not there yet.
-- Other than this I do most of the things that people to _pass their time_.
+- Right now, I am focused on trying to learn some cool techniques from computational physics and implementing those to solve problems I find interesting.
+- I also love having discussions involving physics, mathematics, computer science, biology, linguistics, music and ehh... arts I guess. Almost everything!
 - If you would like to connect, find me on
   - [github](https://github.com/JaydevSR)
   - [twitter](https://twitter.com/JaydevSR)

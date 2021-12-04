@@ -59,8 +59,9 @@ nav li a {
 .side-bar .blog-name {
   display: inline-block;
   text-align: center;
-  font-size: 40px;
-  font-family: "Major Mono Display", Monaco, monospace;
+  font-size: 45px;
+  font-family: Megrim, monospace;
+  font-weight: bold;
 }
 
 .side-bar .blog-name a {
@@ -311,7 +312,7 @@ instead, display a burger menu.
 .page-title h1 {
   text-align: center;
   border: none;
-  font-family: 'Space Mono';
+  font-family: 'Zilla Slab Highlight';
   font-size: 40px;
   padding: 0;
   margin-top: 0.5em;
@@ -598,7 +599,7 @@ hr.page-end-line {
   }
   
   .blog-name .expand-on-hover:hover  span {
-    width: 150px;
+    width: 125px;
     opacity: 100%;
   }
 }

@@ -11,16 +11,15 @@
 ---
 
 - Some notebooks[^1] :
-  - Topics in computational physics (\danger{In progress})
-  
-    🔗 [Link](https://jaydevsr.github.io/computational-physics-notes/) 
-  - Introduction to theory of computation (\danger{In progress})
-  
-    🔗 [Link](https://jaydevsr.notion.site/Theory-of-Computation-b76a983528b846e7b0aaf650de61807c)
-  - Quantum Mechanics (\danger{In progress})
-  
-    🔗 [Link](https://jaydevsr.notion.site/Quantum-Mechanics-0081b8978e1c4c589b80711e0ad95778)
+  - Topics in computational physics 🔗 [Link](https://jaydevsr.github.io/computational-physics-notes/) 
+  - Introduction to theory of computation 🔗 [Link](https://jaydevsr.notion.site/Theory-of-Computation-b76a983528b846e7b0aaf650de61807c)
+  - Quantum Mechanics 🔗 [Link](https://jaydevsr.notion.site/Quantum-Mechanics-0081b8978e1c4c589b80711e0ad95778)
 <!-- - [My codepen account](https://codepen.io/jaydevsr) (\note{Nothing much for now but I occasionally try out cool stuff there.}) -->
-- [My Goodreads](https://goodreads.com/jaydevsr)
+<!-- - [My Goodreads](https://goodreads.com/jaydevsr) -->
+
+- A three channel 2-dimensional grid supposed to capture the visual state of my body from the some point in the past. TL;DR my picture. (I was quite happy with how the caricature of Paul Dirac, that I copied from the web, turned out.)
+  @@img-small
+    ![My image with a caricature of Paul Dirac I copied from the internet.](/assets/images/my-pic-with-dirac.jpg)
+  @@
 
 [^1]: **Rule of thumb**: Never believe in what's written in other's notebooks without double checking.
