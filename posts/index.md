@@ -16,7 +16,7 @@
         <div class="post">
             <span class="date">(10<sup>th</sup> December)</span>
             <a href="/posts/2021/ising-monte-carlo-1/">
-                Simulating the Ising model using Monte-Carlo Algorithms: Part 1
+                Simulating the Ising model: Part 1
             </a>
         <div/>
 

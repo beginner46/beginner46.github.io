@@ -4,8 +4,8 @@
 
 :root {
   --block-background: #f8f8f8;
-  --small: 14px;
-  --normal: 16px;
+  --small: 12px;
+  --normal: 14px;
   --text-color: hsv(0, 0%, 20%);
   --col-a: #F9F7F7;
   --col-b: #DBE2EF;
@@ -72,9 +72,9 @@ body {
     TITLES
 ================================================================== */
 
-.franklin-content h1 { font-size: 28px; }
-.franklin-content h2 { font-size: 24px; }
-.franklin-content h3 { font-size: 20px; }
+.franklin-content h1 { font-size: 24px; }
+.franklin-content h2 { font-size: 20px; }
+.franklin-content h3 { font-size: 18px; }
 
 .franklin-content h1,
 h2,
@@ -83,16 +83,16 @@ h4,
 h5,
 h6 {
   font-family: 'Space Mono', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   text-align: left;
 }
 
 .franklin-content h1 {
   padding-bottom: 0.5em;
-  border-bottom: 4px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
   border-radius: 2px;
   margin-top: 2em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .franklin-content h2 {
@@ -127,7 +127,10 @@ h6 {
   text-align: center;
 }
 .franklin-toc {
-  font-family: 'Work Sans';
+  font-family: 'Courier New', Courier, monospace;
+  margin: 20px 0px;
+  border: 2px dotted gray;
+  padding: 20px;
 }
 .franklin-toc ol ol {
   list-style-type: lower-alpha;
@@ -243,9 +246,8 @@ td {
   text-align: center;
   margin-left: 43%;
   margin-right: 43%;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  transform: rotate(45deg);
 }
 
 /* ==================================================================

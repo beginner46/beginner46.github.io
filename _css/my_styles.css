@@ -571,8 +571,8 @@ hr.page-end-line {
 }
 
 .franklin-content .inline-img {
-  height: var(--normal);
   width: var(--normal);
+  height: var(--normal);
   margin: 0px;
   padding: 0px 5px;
 }
