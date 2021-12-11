@@ -506,6 +506,48 @@ instead, display a burger menu.
     opacity: 100%;
   }
 }
+/* ==================================================================
+    Posts Styles
+================================================================== */
+.post-list {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.post-list .year-list {
+  margin: 40px 0px;
+}
+
+.post-list .year-list .year-line {
+  text-align: center;
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.post-list .year-list .year-line span.year {
+  font-size: xx-large;
+  color: var(--col-d);
+  font-weight: bold;
+}
+
+.post-list .year-list .post {
+  margin: 20px 0px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.post-list .year-list .post span.date {
+  color: var(--col-d);
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.post-title {
+  text-align: center;
+  font-size: larger;
+  font-family: Lexend, Arial, Helvetica, sans-serif;
+}
+
 
 /* ==================================================================
     Other Styles

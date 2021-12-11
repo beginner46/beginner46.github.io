@@ -1,0 +1,25 @@
+@def title="My Posts | JaydevSR"
+
+~~~
+<div class="wrapper page-title">
+    <h1>My Posts.</h1>
+</div>
+~~~
+
+---
+
+~~~
+<div class="post-list">
+    <div class="year-list">
+        <div class="year-line">In the year <span class="year">2021</span>...</div>
+
+        <div class="post">
+            <span class="date">(10<sup>th</sup> December)</span>
+            <a href="/posts/2021/ising-monte-carlo-1/">
+                Simulating the Ising model using Monte-Carlo Algorithms: Part 1
+            </a>
+        <div/>
+
+    </div>
+</div>
+~~~
