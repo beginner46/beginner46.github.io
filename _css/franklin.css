@@ -4,8 +4,8 @@
 
 :root {
   --block-background: #f8f8f8;
-  --small: 12px;
-  --normal: 14px;
+  --small: 14px;
+  --normal: 15px;
   --text-color: hsv(0, 0%, 20%);
   --col-a: #F9F7F7;
   --col-b: #DBE2EF;
@@ -256,7 +256,7 @@ td {
 
 body { counter-reset: eqnum; }
 
-.katex { font-size: 1em !important; }
+.katex { font-size: 1.2em !important; }
 
 .katex-display .katex {
   /* Overwrite KaTeX settings. */
@@ -272,6 +272,7 @@ body { counter-reset: eqnum; }
   position: relative;
   float: right;
   padding-right: 5px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* ==================================================================
@@ -319,6 +320,7 @@ code {
 ================================================================== */
 
 .franklin-content .colbox-blue {
+  font-family: 'Libre Baskerville', 'Lora', serif;;
   background-color: #eef3f5;
   padding-top: 5px;
   padding-right: 10px;
@@ -329,4 +331,18 @@ code {
   margin-bottom: 5px;
   border-radius: 0 10px 10px 0;
   border-left: 5px solid #4c9cf1;
+}
+
+.franklin-content .colbox-yellow {
+  font-family: 'Libre Baskerville', 'Lora', serif;;
+  background-color: #fdfde4;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 0 10px 10px 0;
+  border-left: 5px solid #ece24a;
 }

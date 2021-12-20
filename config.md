@@ -30,7 +30,9 @@ Add here global latex commands to use throughout your pages.
     <span style="color: slategray;">#1</span>
     ~~~
     }
-
+\newcommand{\lined}[1]{
+    <u>#1</u>
+}
 \newcommand{\description}[1]{
     ~~~
     <span style="color: slategray; margin-bottom: 10px; font-size:16px; font-weight: 300;">📋 !#1</span>
