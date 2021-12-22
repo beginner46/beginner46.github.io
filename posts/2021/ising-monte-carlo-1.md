@@ -10,7 +10,7 @@
 
 ## The Ising Model and Motivation
 
-The Ising model is a very simple model of a *magnet*. I consists a lattice with $N$ sites and at each site we have a **spin** (classical). The spin can take two values either $+1$ (up) or $-1$ (down). There can also be an external magnetic field that is applied parallel to the spins.
+The Ising model is a very simple model of a *magnet*. It consists a lattice with $N$ sites and at each site we have a **spin** (classical). The spin can take two values either $+1$ (up) or $-1$ (down). There can also be an external magnetic field that is applied parallel to the spins.
 
 @@img-small
 ![](/assets/images/blog/ising_lattice.jpeg)
@@ -37,9 +37,54 @@ Now, let's say I want to calculate the expectation value of some quantity $Q$ (e
 $$\langle Q\rangle = \sum_{\mu} Q_\mu p_\mu$$
 
 @@colbox-blue
-Seems easy right? But there is a big issue with this, how do I know the distribution for my given system to begin with? I can't just go about calculating $Q_\mu$ and $p_\mu$ for every possible state (even for a lattice of size $N=100$ there are $2^{100}$ possible states, and there is no need to say that this is a HUGE number of states!). \danger{This is where the simulation part comes to our rescue.}
+Seems easy right? But there is a big issue with this, how do I know the distribution for my given system to begin with? I can't just go about calculating $Q_\mu$ and $p_\mu$ for every possible state (even for a lattice of size $N=100$ there are $2^{100}$ possible states, and there is no need to say that this is a HUGE number of states!). **This is where the simulation part comes to our rescue**.
 @@
 
-## The Markov-Chain-Monte-Carlo (MCMC) Method
+## The Markov-Chain-Monte-Carlo (MCMC) Methods
 
-\danger{In progress}
+In order to determine the expectation values of physical quantities (and other related quantities) we need a representative sample of states that the system goes through at equilibrium. Then using this representative sample we can make an estimate of the desired quantity.
+
+The Markov Chain Monte Carlo method is one such method that is used for sampling from a given distribution. To understand how this method works we need to understand what we mean by a Markov chain.
+
+### Markov Chains
+
+A Markov chain can be thought of as a sequence of random variables $X_0, X_1, \dots$ that take values from some state space $\mathscr{S}$. It is then completely specified by the following properties:
+
+1. **Initial Distribution**: The probability of $X_0$ taking some value $\alpha \in \mathscr{S}$ i.e. $\pi_0(\alpha)\equiv\mathbb P (X_0 = \alpha)$.
+2. **Transition Probabilities**: The probability that given some state $\alpha\in\mathscr S$ the next state will be $\beta\in\mathscr S$ i.e. $p(\alpha\rarr\beta)\equiv \mathbb P(X_{n+1} = \beta | X_n = \alpha)$. These transition probabilities have to be independent of $n$ for a Markov chain.
+
+In addition to that we have the conditions, $\sum_{\alpha\in\mathscr{S}} \pi_0(\alpha) = 1$ (the chain has to start in some initial state) and $\sum_{\beta\in\mathscr{S}} p(\alpha\rarr\beta) = 1$ (the chain either stays in the same state or makes a transition at each step).
+
+
+@@colbox-yellow
+**Let's take an example to understand this**. Say that a company buys a machine that has 50% chance of being in a working condition (a really bad purchase to be honest). In addition to that if it is in working condition at some day then there is a 30% percent chance of it being broken the next day. The company also hired a technician who can fix the machine with 70% probability within a day if it is broken. Then this scenario can be modelled as the follownig Markov chain (graphically):
+
+@@img-mid
+![](/assets/images/blog/markov_chain_eg.jpeg)
+@@
+@@
+
+---
+
+Now, that we have got the basic definitions out of the way, similar to the initial distribution we define:
+
+$$\pi_n(\alpha) = \mathbb P(X_n = \alpha \in \mathscr{S})$$
+
+One of the important question that we need to ask while studying Markov chains is whether the chain converges to some stationary distribution for large $n$. Or in precise terms for $\alpha\in\mathscr{S}$ is there a fixed distribution $\pi$ such that:
+
+$$\lim_{n\rarr\infty} \pi_n(\alpha) \stackrel{\color{red}{?}}= \pi(\alpha)$$
+
+@@colbox-blue
+One of the important results from the study of Markov chains is that if the Markov chain satisfies some specific properties (that is if it is *irreducible*) then it must converge to a stationary distribution that is independent of the initial distribution and is only dependent upon the transition probabilities.
+
+What these properties are is not important right now because the MCMC algorithms are cleverly designed to have these properties. Refer to \citep{sokal1996} for more details on irreducibility and Markov chains.
+
+**So, the main takeaway is that we can generate any distribution of states we want just by simulating some cleverly designed Markov chains and running them for a long time.**
+@@
+
+
+## References
+
+- \biblabel{newman-barkema}{Newman, Barkema (1999)} **Newman, M. E. J., Barkema, G. T. (1999)**. Monte Carlo methods in statistical physics. Oxford: Clarendon Press. \note{(general reference)}
+
+- \biblabel{sokal1996}{Sokal A. (1997)} **Sokal A. (1997)** Monte Carlo Methods in Statistical Mechanics: Foundations and New Algorithms. In: DeWitt-Morette C., Cartier P., Folacci A. (eds) Functional Integration. NATO ASI Series (Series B: Physics), vol 361. Springer, Boston, MA. [https://doi.org/10.1007/978-1-4899-0319-8_6](https://doi.org/10.1007/978-1-4899-0319-8_6)

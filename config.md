@@ -30,6 +30,11 @@ Add here global latex commands to use throughout your pages.
     <span style="color: slategray;">#1</span>
     ~~~
     }
+\newcommand{\blue}[1]{
+    ~~~
+    <span style="color: blue;">#1</span>
+    ~~~
+}
 \newcommand{\lined}[1]{
     <u>#1</u>
 }
