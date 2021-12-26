@@ -32,7 +32,7 @@ function hfun_addcomments()
         <script src="https://utteranc.es/client.js"
             repo="JaydevSR/personal-website-utterances"
             issue-term="pathname"
-            theme="boxy-light"
+            theme="github-light"
             crossorigin="anonymous"
             async>
         </script>
