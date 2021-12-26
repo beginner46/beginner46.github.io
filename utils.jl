@@ -29,6 +29,7 @@ Add a comment widget, managed by utterances <https://utteranc.es>.
 """
 function hfun_addcomments()
     html_str = """
+        <div class="comments-back">
         <script src="https://utteranc.es/client.js"
             repo="JaydevSR/personal-website-utterances"
             issue-term="pathname"
@@ -36,6 +37,7 @@ function hfun_addcomments()
             crossorigin="anonymous"
             async>
         </script>
+        </div>
     """
     return html_str
 end
