@@ -75,9 +75,12 @@ One of the important question that we need to ask while studying Markov chains i
 $$\lim_{n\rarr\infty} \pi_n(\alpha) \stackrel{\color{red}{?}}= \pi(\alpha)$$
 
 @@colbox-blue
-One of the important results from the study of Markov chains is that if the Markov chain satisfies some specific properties (that is if it is *irreducible*) then it must converge to a stationary distribution that is independent of the initial distribution and is only dependent upon the transition probabilities.
+One of the important results from the study of Markov chains is that if the Markov chain satisfies some specific conditions then it must converge to a stationary distribution that is independent of the initial distribution and is only dependent upon the transition probabilities. These conditions are (conditions of *ergodicity*):
 
-What these properties are is not important right now because the MCMC algorithms are cleverly designed to have these properties. Refer to \citep{sokal1996} for more details on irreducibility and Markov chains.
+1. **Irreducibility**: Every state is reachable from every other state within finite number of steps.
+2. **Non-periodicity**: After visiting any state it should not be possible to visit the same state with $nk$ steps for $n=1,2,\dots$ and fixed integer $k$.
+
+The MCMC algorithms are cleverly designed to have these properties in order to generate states from a fixed distribution. Refer to \citep{sokal1996} for more details.
 
 **So, the main takeaway is that we can generate any distribution of states we want just by simulating some cleverly designed Markov chains and running them for a long time.**
 @@
@@ -88,3 +91,6 @@ What these properties are is not important right now because the MCMC algorithms
 - \biblabel{newman-barkema}{Newman, Barkema (1999)} **Newman, M. E. J., Barkema, G. T. (1999)**. Monte Carlo methods in statistical physics. Oxford: Clarendon Press. \note{(general reference)}
 
 - \biblabel{sokal1996}{Sokal A. (1997)} **Sokal A. (1997)** Monte Carlo Methods in Statistical Mechanics: Foundations and New Algorithms. In: DeWitt-Morette C., Cartier P., Folacci A. (eds) Functional Integration. NATO ASI Series (Series B: Physics), vol 361. Springer, Boston, MA. [https://doi.org/10.1007/978-1-4899-0319-8_6](https://doi.org/10.1007/978-1-4899-0319-8_6)
+
+
+{{ addcomments }}

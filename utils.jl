@@ -21,3 +21,21 @@ end
 function hfun_getyear()
   return year(today())
 end
+
+"""
+    {{ addcomments }}
+
+Add a comment widget, managed by utterances <https://utteranc.es>.
+"""
+function hfun_addcomments()
+    html_str = """
+        <script src="https://utteranc.es/client.js"
+            repo="JaydevSR/personal-website-utterances"
+            issue-term="pathname"
+            theme="boxy-light"
+            crossorigin="anonymous"
+            async>
+        </script>
+    """
+    return html_str
+end
