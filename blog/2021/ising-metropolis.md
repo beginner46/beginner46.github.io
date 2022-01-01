@@ -310,7 +310,7 @@ Performing the simulation for a square lattice size of 20 (400 spins), we get th
 @@
 
 @@img-border
-![](/assets/images/blog/plots/X_vs_T_20.png)
+![](/assets/images/blog/plots/x_vs_T_20.png)
 @@
 
 2. Internal energy and specific heat (per site) compared with analytical results for an infinite lattice:
