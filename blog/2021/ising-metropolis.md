@@ -1,7 +1,10 @@
-@def title = "Simulating the Ising Model I"
-@def blogtitle = "Simulating the Ising Model I : Metropolis Algorithm"
-@def description = "Using the Metropolis algorithm to simulate the Ising Model by sampling the states from equilibrium distribution."
+@def title = "Ising model and the Metropolis algorithm"
+@def blogtitle = "Ising model and the Metropolis algorithm"
+@def description = "Using the Metropolis algorithm to simulate the Ising Model by sampling the states from equilibrium."
 @def date = "31 December 2021"
+
+@def hascode = true
+@def lang = "julia"
 
 # {{ blogtitle }}
 \date{ {{ date }} }
@@ -156,13 +159,169 @@ Metropolis Algorithm
 5. Steps $(2) - (4)$ are followed for several sweeps (one sweep is $N$ selection or flip attempts where $N$ is the total number of spins). The system is allowed to reach equilibrium first by running for several sweeps and then more sweeps are made for making measurements.
 @@
 
-<!-- ## The Appendix
+## The Appendix
 
 ### Code (In Julia)
-\danger{TODO}
 
-### Simulation Results
-\danger{TODO} -->
+- One sweep of the Metropolis algorithm is performed as:
+
+```julia
+"""
+    ising_metropolis_sweep(spins, T, E, M)
+Perform one sweep of the lattice using single-spin-flip dynamics (1 sweep == N*N flip attempts).
+Here arguments E and M are the total energy and total magnetization before the sweep.
+Returns total energy and magnetization after sweep.
+"""
+function ising_metropolis_sweep!(spins, T, E, M)
+    N = size(spins)[1]
+    for i = 1:N^2
+        k = rand(1:N, 2)
+        ΔE = deltaE(spins, k, N)
+        if accept_flip(ΔE, T)
+            spins[k[1], k[2]] *= -1
+            E = E + ΔE
+            M = M + 2spins[k[1], k[2]]
+        end
+    end
+    return E, M
+end
+```
+
+- Acceptance ratios for the Metropolis algoritm are given by:
+
+```julia
+"""
+    accept_flip(spins, N, k_i, k_j, T)
+Determine whether to accept the next state or not according to Metropolis acceptance rates.
+Returns `true` or `false`.
+"""
+function accept_flip(ΔE, T)
+    # Metropolis Acceptance Rates
+    if ΔE <= 0
+        return true
+    elseif rand() < exp(-ΔE / T)
+        return true
+    else
+        return false
+    end
+end
+```
+
+- The difference in energies between states after single flip dynamics can be calculated as:
+
+```julia
+"""
+    delta_E(spins, k)
+Calculate the energy difference between two states for one spin flip at site k.
+"""
+function deltaE(spins, k, N)
+    ΔE = 0
+    for δ ∈ ([1, 0], [N - 1, 0], [0, 1], [0, N - 1])
+        nn = k + δ
+        @. nn = mod1(nn, N)  # Apply periodic boundary conditions
+        ΔE += spins[nn[1], nn[2]]
+    end
+    ΔE *= 2spins[k[1], k[2]]
+end
+```
+
+- Physical quantities for a given system are calculated as:
+
+```julia
+"""
+    total_magnetization(spins)
+Calculate the total magnetization of square spin lattice.
+"""
+function total_magnetization(spins)
+    return abs(sum(spins))  # As B=0
+end
+
+
+"""
+    total_energy(spins)
+Calculate the total energy of the square spin lattice (with zero field and J=1).
+"""
+function total_energy(spins)
+    N = size(spins)[1]
+    running_sum = 0
+    for i = 1:N
+        for j = 1:N
+            s_k = spins[i, j]
+            for δ ∈ ([1, 0], [N - 1, 0], [0, 1], [0, N - 1])
+                nn = [i, j] + δ
+                @. nn = mod1(nn, N)  # Apply periodic boundary conditions
+                running_sum += s_k * spins[nn[1], nn[2]]
+            end
+        end
+    end
+    return -running_sum / 2  # divide by 2 because each bond counted twice
+end
+
+
+"""
+    specific_heat(u_vals, T, N)
+Calculate the specific heat from given array of internal energy per site (`N²` sites) at temperature `T`.
+"""
+function specific_heat(u_vals, T, N)
+    return (T^-2) * N^2 * var(u_vals, corrected = false)
+end
+
+
+"""
+    succeptibility(m_vals, T, N)
+Calculate the succeptibility from given array of mean magnetization per site (`N²` sites) at temperature `T`.
+"""
+function succeptibility(m_vals, T, N)
+    return (T^-2) * N^2 * var(m_vals, corrected = false)
+end
+```
+
+- Errors in the results can be calculated using the blocking method:
+
+```julia
+using Statistics
+
+"""
+    blocking_err(samples, calc_qty; blocks=10)
+Estimate the error in the given samples by blocking method.
+Here, `calc_qty` is the function to calculate the quantity in which error has to be calculated.
+And, `blocks` is a keyword arguments giving number of blocks.
+"""
+function blocking_err(samples, calc_qty, args...; blocks = 20)
+    block_array = zeros(Float64, blocks)
+    blocklength = length(samples) ÷ blocks
+    for i = 1:blocks
+        sample_block = samples[(i-1)*blocklength+1:i*blocklength]
+        block_array[i] = calc_qty(sample_block, args...)
+    end
+    err = std(block_array)
+    return err
+end
+```
+
+### Some Results
+
+Performing the simulation for a square lattice size of 20 (400 spins), we get the following results:
+
+1. Magnetization and Succeptibility (per site):
+
+@@img-border
+![](/assets/images/blog/plots/m_vs_T_20.png)
+@@
+
+@@img-border
+![](/assets/images/blog/plots/X_vs_T_20.png)
+@@
+
+2. Internal energy and specific heat (per site) compared with analytical results for an infinite lattice:
+
+@@img-border
+![](/assets/images/blog/plots/u_and_c_vs_Temp_20.png)
+@@
+
+@@colbox-blue
+In the above results, we can note a peculiar change in all of the physical quantities at $T\approx 2.2 $. This is an example of a **continuous (second order) phase transition**.
+@@
 
 ## The References
 

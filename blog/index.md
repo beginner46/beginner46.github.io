@@ -15,8 +15,8 @@
 
         <div class="post">
             <span class="date">(31<sup>st</sup> December)</span>
-            <a href="/blog/2021/ising-monte-carlo-1/">
-                Simulating the Ising model I : Metropolis Algorithm
+            <a href="/blog/2021/ising-metropolis/">
+                Ising model and the Metropolis algorithm.
             </a>
         <div/>
 

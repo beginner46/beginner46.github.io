@@ -578,6 +578,7 @@ hr.page-end-line {
 }
 
 .scroll-blur {
+  display: none;
   position: sticky;
   bottom: 0;
   height: 200px;
