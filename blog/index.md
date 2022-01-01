@@ -14,7 +14,7 @@
         <div class="year-line">In the year <span class="year">2021</span>...</div>
 
         <div class="post">
-            <span class="date">(10<sup>th</sup> December)</span>
+            <span class="date">(31<sup>st</sup> December)</span>
             <a href="/blog/2021/ising-monte-carlo-1/">
                 Simulating the Ising model I : Metropolis Algorithm
             </a>

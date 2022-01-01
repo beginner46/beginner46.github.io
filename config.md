@@ -49,3 +49,9 @@ Add here global latex commands to use throughout your pages.
     <div style="color: slategray; margin-bottom: 10px; font-size: 16px; font-weight: 300;">📅 !#1</div>
     ~~~
 }
+
+\newcommand{\emptypar}{
+    ~~~
+    <p>&nbsp</p>
+    ~~~
+}

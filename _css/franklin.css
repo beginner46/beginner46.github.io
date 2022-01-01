@@ -347,6 +347,31 @@ code {
   border-left: 5px solid #ece24a;
 }
 
+.franklin-content .algorithm-box {
+  margin-top: 1.5em;
+  width: 95%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:  #f3d9e0;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  padding-bottom: 5px;
+}
+.franklin-content .algorithm-box .content {
+  padding: 12px;
+  padding-left: 14px;
+}
+.franklin-content .algorithm-box .title{
+  font-size: 120%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 7px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  color: white;
+  background: rgb(231, 131, 173);
+}
+
 .franklin-content .comments-back {
   font-family: 'Libre Baskerville', 'Lora', serif;;
   background-color: var(--col-a);
