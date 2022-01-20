@@ -17,7 +17,7 @@
 <!-- - [My codepen account](https://codepen.io/jaydevsr) (\note{Nothing much for now but I occasionally try out cool stuff there.}) -->
 <!-- - [My Goodreads](https://goodreads.com/jaydevsr) -->
 
-- A three channel 2-dimensional grid supposed to capture the visual state of my body from the some point in the past. TL;DR my picture. (I was quite happy with how the caricature of Paul Dirac, that I copied from the web, turned out.)
+- This is what I look like (Yes I like to draw sometimes. I was quite happy with how the caricature of Paul Dirac, that I copied from the web, turned out.):
   @@img-small
     ![My image with a caricature of Paul Dirac I copied from the internet.](/assets/images/my-pic-with-dirac.jpg)
   @@
