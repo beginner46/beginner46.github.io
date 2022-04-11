@@ -14,7 +14,11 @@
 - I am an undergraduate student in _Dept. EECS_ at _[IISER Bhopal](https://iiserb.ac.in/)_, which is a higher education institute in Bhopal, India.
 - I enjoy studying _Physics_ and _Computer Science_ and my academic interests lie at the bridge between these two domains.
 - Right now, I am focused on trying to learn some cool techniques from computational physics and implementing those to solve problems I find interesting.
-- I love having discussions involving physics, mathematics, computer science, biology, linguistics, music, arts and almost everythng I guess!
+- Things that can easily lead to an hour (or more) long discussion with me
+  - Physics, Computer Science and Mathematics.
+  - The Julia programming language.
+  - Biology of brain and evolution.
+  - Political and existential philosophy.
 - If you would like to connect, find me on
   - [github](https://github.com/JaydevSR)
   - [twitter](https://twitter.com/JaydevSR)
