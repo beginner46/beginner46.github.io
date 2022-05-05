@@ -1,17 +1,32 @@
 <!doctype html>
 <html lang="en">
-<head>
+<!-- <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/franklin.css">
   <link rel="stylesheet" href="/css/basic.css">
   <title>Tag: {{fill fd_tag}}</title>
+</head> -->
+<head>
+  <!-- <meta name="google-site-verification" content="S0kmPNF2Xlaju-U6yBmvjPCA271iP6vC3Mm1gWLiSLA" /> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/franklin.css" />
+  <link rel="stylesheet" href="/css/my_styles.css" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <title>Tag: {{fill fd_tag}}</title>
+  {{insert head_external.html }}
+  <!-- External files and liberaries -->
 </head>
-<body>
+<body class="">
   {{insert header.html}}
-  <div class="{{div_content}}">
-    <h1>Tag: {{fill fd_tag}}</h1>
-    {{taglist}}
+  <div class="franklin-content">
+    <div class="wrapper">
+      <h1>
+          Tag: {{fd_tag}}
+      </h1> 
+  </div>
+    {{ taglist }}
     {{insert page_foot.html}}
   </div>
 </body>

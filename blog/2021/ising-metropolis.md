@@ -5,6 +5,7 @@
 
 @def hascode = true
 @def lang = "julia"
+@def tags = ["physics", "programming", "julia"]
 
 # {{ blogtitle }}
 \date{ {{ date }} }
