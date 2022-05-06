@@ -306,23 +306,17 @@ Performing the simulation for a square lattice size of 20 (400 spins), we get th
 
 1. Magnetization and Succeptibility (per site):
 
-@@img-border
 ![](/assets/images/blog/plots/m_vs_T_20.png)
-@@
 
-@@img-border
 ![](/assets/images/blog/plots/x_vs_T_20.png)
-@@
+
 
 2. Internal energy and specific heat (per site) compared with analytical results for an infinite lattice:
 
-@@img-border
 ![](/assets/images/blog/plots/u_vs_T_20.png)
-@@
 
-@@img-border
 ![](/assets/images/blog/plots/c_vs_T_20.png)
-@@
+
 
 @@colbox-blue
 In the above results, we can note a peculiar change in all of the physical quantities at $T\approx 2.2 $. This is an example of a **continuous (second order) phase transition**.

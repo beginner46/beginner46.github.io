@@ -3,10 +3,34 @@
 ================================================================== */
 
 :root {
+  --base-font-family: "Libre Baskerville", Baskerville, "Book Antiqua", Georgia, Times, serif;
+  --title-font-family: 'Averia Serif Libre', Georgia, 'Times New Roman', serif;
+  --base-font-size:   17px;
+  --base-font-weight: 400;
+  --base-line-height: 2;
+
+  --small-font-size:  calc(var(--base-font-size) * 0.875);
+
+  --spacing-unit:     30px;
+
+  --brand-color:      #787065;
+  --background-color: #f2f1ed;
+  --text-color:       #363431;
+  --title-color:      #943526;
+
+  --grey-color:       #a2a2a2;
+  --grey-color-light: rgb(233, 233, 233);
+  --grey-color-dark:  #696969;
+
+  --content-width:    800px;
+
+  --on-palm:          600px;
+  --on-laptop:        800px;
+  
   --block-background: #f8f8f8;
-  --small: 14px;
-  --normal: 15px;
-  --text-color: hsv(0, 0%, 20%);
+  --small: var(--small-font-size);
+  --normal: var(--base-font-size);
+  --col-back: #f2f1ed;
   --col-a: #F9F7F7;
   --col-b: #DBE2EF;
   --col-c: #3F72AF;
@@ -19,15 +43,15 @@
 ================================================================== */
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: var(--normal);
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
   color: var(--text-color);
 }
 
 body {
   width: 100%;
   margin: 0;
-  background-color: var(--col-a) !important;
+  background-color: var(--background-color) !important;
 }
 
 /* ==================================================================
@@ -72,9 +96,9 @@ body {
     TITLES
 ================================================================== */
 
-.franklin-content h1 { font-size: 24px; }
-.franklin-content h2 { font-size: 20px; }
-.franklin-content h3 { font-size: 18px; }
+.franklin-content h1 { font-size: 28px; }
+.franklin-content h2 { font-size: 24px; }
+.franklin-content h3 { font-size: 20px; }
 
 .franklin-content h1,
 h2,
@@ -85,6 +109,8 @@ h6 {
   font-family: 'Space Mono', sans-serif;
   font-weight: normal;
   text-align: left;
+  color: var(--brand-color);
+  font-family: var(--title-font-family);
 }
 
 .franklin-content h1 {
@@ -108,17 +134,17 @@ h6 {
 }
 
 .franklin-content h1 a { color: inherit; }
-.franklin-content h1 a:hover { color: var(--col-c); text-decoration: none; }
+.franklin-content h1 a:hover { color: var(--grey-color-dark); text-decoration: none; }
 .franklin-content h2 a { color: inherit; }
-.franklin-content h2 a:hover { color: var(--col-c); text-decoration: none; }
+.franklin-content h2 a:hover { color: var(--grey-color-dark); text-decoration: none; }
 .franklin-content h3 a { color: inherit; }
-.franklin-content h3 a:hover { color: var(--col-c); text-decoration: none; }
+.franklin-content h3 a:hover { color: var(--grey-color-dark); text-decoration: none; }
 .franklin-content h4 a { color: inherit; }
-.franklin-content h4 a:hover { color: var(--col-c); text-decoration: none; }
+.franklin-content h4 a:hover { color: var(--grey-color-dark); text-decoration: none; }
 .franklin-content h5 a { color: inherit; }
-.franklin-content h5 a:hover { color: var(--col-c); text-decoration: none; }
+.franklin-content h5 a:hover { color: var(--grey-color-dark); text-decoration: none; }
 .franklin-content h6 a { color: inherit; }
-.franklin-content h6 a:hover { color: var(--col-c); text-decoration: none; }
+.franklin-content h6 a:hover { color: var(--grey-color-dark); text-decoration: none; }
 
 .franklin-content table {
   margin-left: auto;
@@ -138,14 +164,14 @@ h6 {
 
 .franklin-content th,
 td {
-  font-size: var(--small);
+  font-size: var(--small-font-size);
   padding: 10px;
   border: 1px solid black;
 }
 
 .franklin-content blockquote {
   background: var(--block-background);
-  border-left: 7px solid #a8a8a8;
+  border-left: 7px solid var(--grey-color);
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   font-style: italic;
@@ -174,7 +200,7 @@ td {
 }
 
 .franklin-content p {
-  font-family: 'Libre Baskerville', 'Lora', serif;
+  font-family: var(--base-font-family);
 }
 
 /* ==================================================================
@@ -203,7 +229,8 @@ td {
 }
 
 .franklin-content .fndef tr {
-  border-left: 2px solid lightgray;
+  border-left: 2px solid var(--brand-color);
+  background-color: var(--grey-color-light);
 }
 
 .franklin-content .fndef td.fndef-backref {
@@ -239,8 +266,8 @@ td {
   margin-right: 5%;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 2px solid;
-  background-color: lightgray;
+  border: 2px solid var(--brand-color);
+  background-color: var(--block-background);
 }
 
 .franklin-content .img-small img {
@@ -293,12 +320,12 @@ body { counter-reset: eqnum; }
 .franklin-content code {
   font-family: 'Fira Code', monospace;
   /* background-color: var(--block-background); */
-  background-color: rgba(27,31,35,0.05);
+  background-color: var(--block-background);
   padding: 0.5em 0.8em;
-  border: dotted;
-  border-width: 2px;
-  border-radius: 3px;
-  border-color: gray;
+  border: double;
+  border-width: 1px;
+  border-radius: 4px;
+  border-color: var(--brand-color);
   font-size: var(--small);
 }
 
@@ -387,7 +414,7 @@ body { counter-reset: eqnum; }
 
 .franklin-content .comments-back {
   font-family: 'Libre Baskerville', 'Lora', serif;;
-  background-color: var(--col-a);
+  background-color: var(--block-background);
   padding-top: 5px;
   padding-right: 10px;
   padding-left: 10px;
@@ -396,9 +423,9 @@ body { counter-reset: eqnum; }
   margin-top: 4em;
   margin-bottom: 25px;
   border-radius: 10px;
-  border-left: 5px solid var(--col-c);
-  border-right: 5px solid var(--col-c);
-  border-bottom: 1px solid var(--col-b);
-  border-top: 1px solid var(--col-b);
+  border-left: 5px solid var(--brand-color);
+  border-right: 5px solid var(--brand-color);
+  border-bottom: 1px solid var(--brand-color);
+  border-top: 1px solid var(--brand-color);
 
 }
