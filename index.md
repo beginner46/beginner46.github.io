@@ -3,8 +3,8 @@
 ~~~
 <div class="wrapper page-title">
     <h1>
-        Hello Stranger!
-    </h1> 
+        Hello Unstranger!
+    </h1>
 </div>
 ~~~
 
