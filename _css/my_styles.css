@@ -114,14 +114,16 @@ table tbody tr td {
 
 .copyright-bottom {
   display: none;
-  width: auto;
-  margin-top: 10px;
-  padding-top: 20px;
-  font-size: 70%;
+  width: 90%;
+  margin-top: 20px;
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: var(--small-font-size);
   font-family: 'Courier New', Courier, monospace, serif;
-  color: var(--col-d);
+  color: lightslategray;
   text-align: center;
-  border-top: 2px dotted grey;
+  /* border-top: 4px dotted grey; */
 }
 
 .side-bar .copyright {
@@ -289,7 +291,8 @@ instead, display a burger menu.
   .franklin-content {
     margin-top: 10px;
     margin-bottom: 20px;
-    margin-left: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
     min-height: auto;
   }
 
@@ -382,8 +385,8 @@ hr.page-end-line {
 }
 
 .inline-img {
-  width: var(--normal);
-  height: var(--normal);
+  width: var(--base-font-size);
+  height: var(--base-font-size);
 }
 
 .franklin-content .inline-img {

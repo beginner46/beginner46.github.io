@@ -9,7 +9,7 @@
   --base-font-weight: 400;
   --base-line-height: 2;
 
-  --small-font-size:  calc(var(--base-font-size) * 0.875);
+  --small-font-size:  calc(var(--base-font-size) * 0.7);
 
   --spacing-unit:     30px;
 
