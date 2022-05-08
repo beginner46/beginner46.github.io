@@ -18,7 +18,7 @@
             <a href="/blog/2021/ising-metropolis/">
                 Ising model and the Metropolis algorithm.
             </a>
-        <div/>
+        </div>
 
     </div>
 </div>

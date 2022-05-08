@@ -191,11 +191,12 @@ td {
 }
 
 .franklin-content a {
-  color: #004de6;
+  color: var(--title-color);
   text-decoration: none;
 }
 
 .franklin-content a:hover {
+  color: var(--grey-color);
   text-decoration: underline;
 }
 
