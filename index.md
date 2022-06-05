@@ -18,7 +18,7 @@
     ~~~
 @@
 
-- I am an undergraduate student in _Dept. EECS_ at _[IISER Bhopal](https://iiserb.ac.in/)_, which is a higher education institute in Bhopal, India.
+- I am an undergraduate student in _Dept. EECS_ at _[IISER Bhopal](https://iiserb.ac.in/)_, which is a higher education institute situated in Bhopal, India.
 - I enjoy studying _Physics_ and _Computer Science_ and my academic interests lie at the bridge between these two domains.
 - Right now, I am focused on trying to learn some cool techniques from computational physics and implementing those to solve problems I find interesting.
 - Things that can easily lead to an hour (or more) long discussion with me

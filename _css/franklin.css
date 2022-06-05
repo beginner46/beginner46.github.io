@@ -3,8 +3,8 @@
 ================================================================== */
 
 :root {
-  --base-font-family: "Book Antiqua", "Libre Baskerville", Baskerville, Georgia, Times, serif;
-  --title-font-family: 'Averia Serif Libre', Georgia, 'Times New Roman', serif;
+  --base-font-family: "IM Fell DW Pica", "Book Antiqua", "Libre Baskerville", Baskerville, Georgia, Times, serif;
+  --title-font-family: 'IM Fell DW Pica SC', Georgia, 'Times New Roman', serif;
   --base-font-size:   17px;
   --base-font-weight: 400;
   --base-line-height: 2;
@@ -14,7 +14,7 @@
   --spacing-unit:     30px;
 
   --brand-color:      #787065;
-  --background-color: #f2f1ed;
+  --background-color: rgba(242, 241, 237, 0.3);
   --text-color:       #363431;
   --title-color:      #943526;
 
@@ -54,6 +54,8 @@ body {
   margin: 0;
   background-color: var(--background-color) !important;
   background-image: url(/assets/images/back.jpg);
+  background-blend-mode: lighten;
+
 }
 
 /* ==================================================================
@@ -108,7 +110,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Space Mono', sans-serif;
   font-weight: normal;
   text-align: left;
   color: var(--brand-color);
@@ -365,7 +366,7 @@ body { counter-reset: eqnum; }
 ================================================================== */
 
 .franklin-content .colbox-blue {
-  font-family: 'Libre Baskerville', 'Lora', serif;;
+  font-family: 'Libre Baskerville', serif;;
   background-color: #eef3f5;
   padding-top: 5px;
   padding-right: 10px;
@@ -379,7 +380,7 @@ body { counter-reset: eqnum; }
 }
 
 .franklin-content .colbox-yellow {
-  font-family: 'Libre Baskerville', 'Lora', serif;;
+  font-family: 'Libre Baskerville', serif;;
   background-color: #fdfde4;
   padding-top: 5px;
   padding-right: 10px;
