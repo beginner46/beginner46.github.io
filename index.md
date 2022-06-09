@@ -27,14 +27,14 @@
 ---
 
 - Things that I am working on right now
-  - Implementing REMD methods in [Molly.jl](https://github.com/JuliaMolSim/Molly.jl)
   - Studying the XY model and the Potts model using Monte-Carlo
+  - Implementing REMD methods in [Molly.jl](https://github.com/JuliaMolSim/Molly.jl) (as part of GSoC 2022)
   If any of this is interesting to you as well let's get in touch.
 
 ---
 
-- Things that can easily lead to an hour (or more) long discussion with me
-  - Anything related to Physics, Computer Science and Mathematics (I mean it).
+- Things I love discussing with people even if they are not interested
+  - Anything related to Physics, Computer Science and Mathematics (I mean it when I say anything).
   - How programming (especially in julia) is so fun.
   - The brain is f***ing awsome and evolution sucks and rocks at the same time.
   - Philosophy of existance (it gets dark pretty quick) and which form of government is the better than other.
@@ -44,5 +44,5 @@
 - My online profiles and contact information
   - [github](https://github.com/JaydevSR)
   - [twitter](https://twitter.com/JaydevSR)
-  - [goodreads](https://goodreads.com/jaydevsr) (book recommendations under *favorites* tag)
+  - [goodreads](https://goodreads.com/jaydevsr) (I recommendation books under *favorites* tag)
   - email: jaydevsrao at gmail.com or jaydev19 at iiserb.ac.in
