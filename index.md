@@ -31,7 +31,7 @@
   - Implementing REMD methods in [Molly.jl](https://github.com/JuliaMolSim/Molly.jl) (as part of GSoC 2022)
   If any of this is interesting to you as well let's get in touch.
 
----
+<!-- ---
 
 - I love listening to Hindustani classical music. Here is a clip of a phenomenal performance by my favorite sitar player Ustad Shahid Parvez
 
@@ -47,7 +47,7 @@
 <div style="text-align: center;">
 <iframe width="350" height="200" src="https://www.youtube.com/embed/75Ju0eM5T2c?clip=UgkxuvJWl8H2Mt3dhfFiroYYcg3z3ylcYfPz&amp;clipt=EMzKAxjStwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-~~~
+~~~ -->
 
 ---
 
