@@ -33,11 +33,21 @@
 
 ---
 
-- Things I don't like to stop talking about once started
-  - Anything related to Physics, Computer Science and Mathematics (I mean it when I say anything).
-  - How programming (especially in julia) is so fun.
-  - The brain is f***ing awsome and evolution sucks and rocks at the same time.
-  - Philosophy of existance (it gets dark pretty quick) and which form of government is the better than other.
+- I love listening to Hindustani classical music. Here is a clip of a phenomenal performance by my favorite sitar player Ustad Shahid Parvez
+
+~~~
+<div style="text-align: center">
+<iframe width="350" height="200" src="https://www.youtube.com/embed/ed4SIvGjqNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+~~~
+
+- I don't like advices but this one makes an exception (partly because the source is Donald Knuth)
+
+~~~
+<div style="text-align: center;">
+<iframe width="350" height="200" src="https://www.youtube.com/embed/75Ju0eM5T2c?clip=UgkxuvJWl8H2Mt3dhfFiroYYcg3z3ylcYfPz&amp;clipt=EMzKAxjStwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+~~~
 
 ---
 
