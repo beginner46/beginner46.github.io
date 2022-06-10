@@ -28,7 +28,7 @@
 
 - Things that I am working on right now
   - Studying the XY model and the Potts model using Monte-Carlo
-  - Implementing REMD methods in [Molly.jl](https://github.com/JuliaMolSim/Molly.jl) (as part of GSoC 2022)
+  - Implementing REMD methods in [Molly.jl](https://github.com/JuliaMolSim/Molly.jl) (as part of GSoC 2022, [link to journal](https://jaydevsr.notion.site/GSoC-Contribution-Journal-dc12886cc9644f90b3be1dbd6c748710))
   If any of this is interesting to you as well let's get in touch.
 
 <!-- ---
