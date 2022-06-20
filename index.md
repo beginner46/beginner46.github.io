@@ -31,28 +31,6 @@
   - Implementing REMD methods in [Molly.jl](https://github.com/JuliaMolSim/Molly.jl) (as part of GSoC 2022, [link to journal](https://jaydevsr.notion.site/GSoC-Contribution-Journal-dc12886cc9644f90b3be1dbd6c748710))
   If any of this is interesting to you as well let's get in touch.
 
-<!-- ---
-
-- I love listening to Hindustani classical music. Here is a clip of a phenomenal performance by my favorite sitar player Ustad Shahid Parvez
-
-~~~
-<div style="text-align: center">
-<iframe width="350" height="200" src="https://www.youtube.com/embed/ed4SIvGjqNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-~~~
-
-- I don't like advices but this one makes an exception (partly because the source is Donald Knuth)
-
-~~~
-<div style="text-align: center;">
-<iframe width="350" height="200" src="https://www.youtube.com/embed/75Ju0eM5T2c?clip=UgkxuvJWl8H2Mt3dhfFiroYYcg3z3ylcYfPz&amp;clipt=EMzKAxjStwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-~~~ -->
-
 ---
 
-- My online profiles and contact information
-  - [github](https://github.com/JaydevSR)
-  - [twitter](https://twitter.com/JaydevSR)
-  - [goodreads](https://goodreads.com/jaydevsr) (I recommend books under *favorites* tag)
-  - email: jaydevsrao at gmail.com or jaydev19 at iiserb.ac.in
+- My online profiles and contact information: [blog](https://jaydevsr.github.io/blog), [github](https://github.com/JaydevSR), [twitter](https://twitter.com/JaydevSR), [goodreads](https://goodreads.com/jaydevsr) (I recommend books under *favorites* tag) and my emails are jaydevsrao[at]gmail.com & jaydev19[at]iiserb.ac.in
