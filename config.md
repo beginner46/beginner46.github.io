@@ -11,7 +11,7 @@ mintoclevel = 2
 # Base files such as LICENSE.md and README.md are ignored by default.
 ignore = ["node_modules/"]
 
-keep_path = ["googlea78425b1c2c37f03.html"]
+<!-- keep_path = ["googlea78425b1c2c37f03.html"] -->
 
 +++
 
