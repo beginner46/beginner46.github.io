@@ -14,7 +14,7 @@
   --spacing-unit:     30px;
 
   --brand-color:      #787065;
-  --background-color: rgba(242, 241, 237, 0.45);
+  --background-color: rgba(242, 241, 237, 0.9);
   --text-color:       #363431;
   --title-color:      #943526;
 
@@ -53,7 +53,8 @@ body {
   width: 100%;
   margin: 0;
   background-color: var(--background-color) !important;
-  background-image: url(/assets/images/back.jpg);
+  background-image: url(/assets/images/back2.jpg);
+  /* background-size: 25% auto; */
   background-blend-mode: lighten;
 
 }
