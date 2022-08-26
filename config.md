@@ -1,55 +1,32 @@
-<!--
-Add here global page variables to use throughout your website.
--->
 +++
 author = "Jaydev Singh Rao"
+shortauthor = "Jaydev S. Rao"
+jobtitle = "Undergraduate student"
+affiliation = "IISER Bhopal"
+affiliation_link = "https://iiserb.ac.in/"
+twitter_user = "https://twitter.com/JaydevSR"
+github_user = "https://github.com/JaydevSR"
+
 mintoclevel = 2
+ignore = ["node_modules/", "franklin", "franklin.pub"]
 
-# Add here files or directories that should be ignored by Franklin, otherwise
-# these files might be copied and, if markdown, processed by Franklin which
-# you might not want. Indicate directories by ending the name with a `/`.
-# Base files such as LICENSE.md and README.md are ignored by default.
-ignore = ["node_modules/"]
+prepath = "ft-academic-resume"
 
+hasplotly = false
+hasmermaid = false
+
+# Set global variable `dateformat` to `"post"`, `"yearmonth"`, or `"year"`
+# The expected file structures are
+# - `"yearmonth"`: posts/YYYY/MM/name-of-post.md
+# - `"year"`: posts/YYYY/name-of-post.md
+# - `"post"`: posts/name-of-post.md
+dateformat = "yearmonth"
+# RSS setup
+website_title = "Jaydev Singh Rao | Homepage"
+website_descr = "Personal homepage of Jaydev Singh Rao."
+website_url   = "https://jaydevsr.github.io/"
 +++
 
-<!--
-Add here global latex commands to use throughout your pages.
--->
-\newcommand{\R}{\mathbb R}
-\newcommand{\scal}[1]{\langle #1 \rangle}
-\newcommand{\danger}[1]{
-    ~~~
-    <span style="color: red;">#1</span>
-    ~~~
-    }
-\newcommand{\note}[1]{
-    ~~~
-    <span style="color: slategray;">#1</span>
-    ~~~
-    }
-\newcommand{\blue}[1]{
-    ~~~
-    <span style="color: blue;">#1</span>
-    ~~~
-}
-\newcommand{\lined}[1]{
-    <u>#1</u>
-}
-\newcommand{\description}[1]{
-    ~~~
-    <span style="color: slategray; margin-bottom: 10px; font-size:16px; font-weight: 300;">📋 !#1</span>
-    ~~~
-}
+\newcommand{\callout}[1]{~~~<div class="alert alert-note"><div>~~~#1~~~</div></div>~~~}
 
-\newcommand{\date}[1]{
-    ~~~
-    <div style="color: slategray; margin-bottom: 10px; font-size: 16px; font-weight: 300;">📅 !#1</div>
-    ~~~
-}
-
-\newcommand{\emptypar}{
-    ~~~
-    <p>&nbsp</p>
-    ~~~
-}
+\newcommand{\icon}[1]{~~~<i class="fas fa-~~~!#1~~~"></i>~~~}

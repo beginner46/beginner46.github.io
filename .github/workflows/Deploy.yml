@@ -2,7 +2,6 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main
       - master
 jobs:
   build-and-deploy:
@@ -12,34 +11,30 @@ jobs:
       uses: actions/checkout@v2
       with:
         persist-credentials: false
-    # NOTE: Python is necessary for the pre-rendering (minification) step
+    - name: Install SSH Client
+      continue-on-error: true
+      uses: webfactory/ssh-agent@v0.2.0
+      with:
+        ssh-private-key: ${{ secrets.FRANKLIN_PRIV }}
     - name: Install python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v1
       with:
         python-version: '3.8'
-    # NOTE: Here you can install dependencies such as matplotlib if you use
-    # packages such as PyPlot.
-    # - run: pip install matplotlib
+    - run: pip install matplotlib # if you use PyPlot this is needed
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
       with:
-        version: 1.6.3
-    # NOTE
-    #   The steps below ensure that NodeJS and Franklin are loaded then it
-    #   installs highlight.js which is needed for the prerendering step
-    #   (code highlighting + katex prerendering).
-    #   Then the environment is activated and instantiated to install all
-    #   Julia packages which may be required to successfully build your site.
-    #   The last line should be `optimize()` though you may want to give it
-    #   specific arguments, see the documentation or ?optimize in the REPL.
+        version: 1.5
     - run: julia -e '
-            using Pkg; Pkg.activate("."); Pkg.instantiate();
+            using Pkg; Pkg.add(["NodeJS", "FranklinUtils"]);
+            Pkg.add(Pkg.PackageSpec(name="Franklin", rev="master"));
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
             using Franklin;
-            optimize()'
+            Pkg.activate("."); Pkg.instantiate();
+            optimize(minify=false, prerender=false)'
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         BRANCH: gh-pages
         FOLDER: __site

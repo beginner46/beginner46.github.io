@@ -1,0 +1,122 @@
+/* ==================================================================
+    VARIABLES
+================================================================== */
+
+:root {
+  --base-font-family: "Libre Baskerville", Baskerville, Georgia, 'Times New Roman', serif;
+  --title-font-family: "Libre Baskerville", Georgia, 'Times New Roman', serif;
+  --nav-font-family: "Libre Baskerville", Baskerville, Georgia, Times, serif;
+  --base-font-size:   17px;
+  --base-font-weight: 400;
+  --base-line-height: 2;
+
+  --small-font-size:  calc(var(--base-font-size) * 0.7);
+
+  --spacing-unit:     30px;
+
+  --background-color: #FAF3F3;
+  --text-color:       #363431;
+  --primary-color:    #E1E5EA;
+  --secondary-color:  #A7BBC7;
+  --tertiary-color:   #C9576C;
+
+  --grey-color:       #a2a2a2;
+  --grey-color-light: rgb(233, 233, 233);
+  --grey-color-dark:  #696969;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #423838;
+        --text-color:       #cac2b6;
+        --primary-color:    #E1E5EA;
+        --secondary-color:  #A7BBC7;
+        --tertiary-color:   #C9576C;
+    }
+} */
+
+/* ==================================================================
+    DEFAULT FONT AND LAYOUT
+================================================================== */
+
+html {
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  font-weight: var(--base-font-weight);
+  color: var(--text-color);
+  background-color: var(--background-color) !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: var(--base-line-height);
+    background-color: var(--background-color) !important;
+}
+
+.franklin-content {
+    margin-top: 40px;
+}
+
+.franklin-content section {
+    background-color: var(--background-color) !important;
+}
+
+nav {
+    background-color: var(--background-color) !important;
+    font-family: var(--nav-font-family) !important;
+}
+
+/* ==================================================================
+    TITLES
+================================================================== */
+
+.franklin-content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: var(--text-color);
+  font-family: var(--title-font-family);
+}
+
+.franklin-content h1 a { color: inherit; }
+.franklin-content h1 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+.franklin-content h2 a { color: inherit; }
+.franklin-content h2 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+.franklin-content h3 a { color: inherit; }
+.franklin-content h3 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+.franklin-content h4 a { color: inherit; }
+.franklin-content h4 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+.franklin-content h5 a { color: inherit; }
+.franklin-content h5 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+.franklin-content h6 a { color: inherit; }
+.franklin-content h6 a:hover { color: var(--grey-color-dark); text-decoration: none; }
+
+/* ==================================================================
+    LINKS
+================================================================== */
+
+a {
+    color: var(--tertiary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+a:focus {
+    color: var(--tertiary-color);
+}
+
+p a:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-decoration: underline;
+}
+
+nav a.navbar-brand:hover {
+    color: var(--tertiary-color) !important;
+}

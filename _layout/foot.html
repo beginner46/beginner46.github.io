@@ -1,13 +1,21 @@
+{{ isnotpage index.html }}
+  </div> <!--article container -->
+</article>
+{{ end }}
+
 <!-- CONTENT ENDS HERE -->
-    {{ if hasmath }}
-        {{ insert foot_katex.html }}
-    {{ end }}
-    {{ if hascode }}
-        {{ insert foot_highlight.html }}
-    {{ end }}
-    <div class="copyright-bottom">
-        <p>&copy; {{ fill author }} {{ getyear }}. Website built with <a href="https://github.com/tlienart/Franklin.jl"> <img src="https://franklinjl.org/assets/infra/logoF2.svg" alt="Franklin.jl" srcset="" class="inline-img"></a> and <a href="https://julialang.org"><img src="/assets/images/julialogo.svg" alt="The Julia programming language" srcset="" class="inline-img"></a>.</p>
-    </div>
-    <script src="/assets/scripts/myscript.js"></script>
+    {{ if hasmath }} {{ insert foot_katex.html }}     {{ end }}
+    {{ if hascode }} {{ insert foot_highlight.html }} {{ end }}
+
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
+
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
+
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
+
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin=anonymous></script>
+
+  <script src="/libs/academic/academic.min.js"></script>
+
   </body>
 </html>

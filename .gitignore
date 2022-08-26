@@ -1,8 +1,7 @@
 __site/
 .DS_Store
+franklin
+franklin.pub
 node_modules/
-package-lock.json
-
-# VScode
-
-.vscode/*
+Manifest.toml
+junk.html
