@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
         version: 1.5
     - run: julia -e '
             using Pkg; Pkg.add(["NodeJS", "FranklinUtils"]);
-            Pkg.add(Pkg.PackageSpec(name="Franklin", rev="master"));
+            Pkg.add(Pkg.PackageSpec(name="Franklin", rev="main"));
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
             using Franklin;
             Pkg.activate("."); Pkg.instantiate();
