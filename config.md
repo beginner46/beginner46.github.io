@@ -10,7 +10,7 @@ github_user = "https://github.com/JaydevSR"
 mintoclevel = 2
 ignore = ["node_modules/", "franklin", "franklin.pub"]
 
-prepath = "ft-academic-resume"
+prepath = ""
 
 hasplotly = false
 hasmermaid = false
