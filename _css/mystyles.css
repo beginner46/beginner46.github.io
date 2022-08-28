@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Sawarabi+Mincho&display=swap');
+
 /* ==================================================================
     VARIABLES
 ================================================================== */
 
 :root {
-  --base-font-family: "Libre Baskerville", Baskerville, Georgia, 'Times New Roman', serif;
-  --title-font-family: "Libre Baskerville", Georgia, 'Times New Roman', serif;
-  --nav-font-family: "Libre Baskerville", Baskerville, Georgia, Times, serif;
+  --base-font-family: "Sawarabi Mincho", "Libre Baskerville", Baskerville, Georgia, 'Times New Roman', serif;
+  --title-font-family: "Sawarabi Mincho", "Libre Baskerville", Georgia, 'Times New Roman', serif;
+  --nav-font-family: "Sawarabi Mincho", "Libre Baskerville", Baskerville, Georgia, Times, serif;
+  --mono-font-family: "Fira Code", 'Courier New', Courier, monospace;
   --base-font-size:   17px;
   --base-font-weight: 400;
-  --base-line-height: 2;
+  --base-line-height: 1.5;
 
   --small-font-size:  calc(var(--base-font-size) * 0.7);
 
