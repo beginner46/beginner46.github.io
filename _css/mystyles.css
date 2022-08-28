@@ -128,3 +128,11 @@ p a:hover {
 nav a.navbar-brand:hover {
     color: var(--tertiary-color) !important;
 }
+
+nav .nav-link {
+    color: var(--grey-color-dark) !important;
+}
+
+nav .nav-link:hover {
+    color: var(--grey-color) !important;
+}

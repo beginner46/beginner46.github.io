@@ -26,12 +26,14 @@
 @@col-12,col-lg-8
 
 \begin{biography}{resume="/null"}
-  I am an undergraduate student at [IISER Bhopal](https://iiserb.ac.in) majoring in Electrical Engineering and Computer Science. My academic interests lie at the intersection of _Physics_ and _Computer Science_. I spend most of my time learning about tools and techniques in these domains and hope to work on developing some myself in the future.
+  I am an undergraduate student at [IISER Bhopal](https://iiserb.ac.in) majoring in Electrical Engineering and Computer Science. My academic interests lie at the intersection of _Physics_ and _Computer Science_. I spend most of my time learning tools and techniques in these domains in order to work on problems that interest me.
   
   Right now I am focused on learning and using computational techniques to study problems in statistical physics. Along these lines I have been involved in work on:
   - Monte-Carlo algorithms for studying the properties of classical spin systems.
   - Application of classical spin systems to other problems due to their shared symmetries. 
   - Open source development of a molecular dynamics library in Julia: [Molly.jl](https://github.com/JuliaMolSim/Molly.jl)
+
+Apart from my academic life, my personal life consists of enjoying music, books, anime and company of good people.
 \end{biography}
 
 \shortcv{
@@ -39,8 +41,6 @@
   education=[
     ("Bachelor of Science (2019-2023)", "Electrical Engineering and Computer Science", "IISER Bhopal")]
 }
-
-> This page is a work in progress.
 
 @@ <!-- end of column -->
 \end{section}
