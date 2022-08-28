@@ -54,12 +54,17 @@ body {
     background-color: var(--background-color) !important;
 }
 
+.article {
+    margin-top: 80px;
+}
+
 .franklin-content {
     margin-top: 40px;
 }
 
 .franklin-content section {
     background-color: var(--background-color) !important;
+    padding-bottom: 40px;
 }
 
 nav {
