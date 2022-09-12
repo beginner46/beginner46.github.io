@@ -30,8 +30,8 @@
 
 /* @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #423838;
-        --text-color:       #cac2b6;
+        --background-color: #272222;
+        --text-color:       #c9c7c3;
         --primary-color:    #E1E5EA;
         --secondary-color:  #A7BBC7;
         --tertiary-color:   #C9576C;
@@ -107,19 +107,19 @@ h6 {
     LINKS
 ================================================================== */
 
-a {
+.franklin-content a {
     color: var(--tertiary-color);
 }
 
-a:hover {
+.franklin-content a:hover {
     color: var(--secondary-color);
 }
 
-a:focus {
+.franklin-content a:focus {
     color: var(--tertiary-color);
 }
 
-p a:hover {
+.franklin-content a:hover {
     color: var(--secondary-color);
     background-color: var(--primary-color);
     text-decoration: underline;
@@ -130,9 +130,9 @@ nav a.navbar-brand:hover {
 }
 
 nav .nav-link {
-    color: var(--grey-color-dark) !important;
+    color: var(--grey-color) !important;
 }
 
 nav .nav-link:hover {
-    color: var(--grey-color) !important;
+    color: var(--grey-color-dark) !important;
 }
