@@ -25,7 +25,7 @@
 <!-- RIGHT COLUMN -->
 @@col-12,col-lg-8
 
-\begin{biography}{resume="/assets/My_CV.pdf"}
+\begin{biography}{resume="/assets/Jaydev_Singh_Rao_CV.pdf"}
   I am an undergraduate student at [IISER Bhopal](https://iiserb.ac.in) majoring in Electrical Engineering and Computer Science. My academic interests lie at the intersection of _Physics_ and _Computer Science_. I spend most of my time learning tools and techniques in these domains in order to work on problems that interest me.
   
   Right now I am focused on learning and using computational techniques to study problems in statistical physics. Along these lines I have been involved in work on:
