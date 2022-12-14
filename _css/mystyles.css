@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Sawarabi+Mincho&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Open+Sans&display=swap');
 /* ==================================================================
     VARIABLES
 ================================================================== */
 
 :root {
-  --base-font-family: "Sawarabi Mincho", "Libre Baskerville", Baskerville, Georgia, 'Times New Roman', serif;
-  --title-font-family: "Sawarabi Mincho", "Libre Baskerville", Georgia, 'Times New Roman', serif;
-  --nav-font-family: "Sawarabi Mincho", "Libre Baskerville", Baskerville, Georgia, Times, serif;
+  --base-font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --title-font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --nav-font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mono-font-family: "Fira Code", 'Courier New', Courier, monospace;
-  --base-font-size:   17px;
+  --base-font-size:   15px;
   --base-font-weight: 400;
   --base-line-height: 1.5;
 
@@ -23,20 +22,36 @@
   --secondary-color:  #A7BBC7;
   --tertiary-color:   #C9576C;
 
-  --grey-color:       #a2a2a2;
-  --grey-color-light: rgb(233, 233, 233);
-  --grey-color-dark:  #696969;
+  --grey-color:       #999;
+  --grey-color-light: #cccccc;
+  --grey-color-dark:  #5e5e5e;
 }
 
-/* @media (prefers-color-scheme: dark) {
+/* ==================================================================
+    DARK MODE
+================================================================== */
+
+@media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #272222;
+        --background-color: #343131;
         --text-color:       #c9c7c3;
         --primary-color:    #E1E5EA;
         --secondary-color:  #A7BBC7;
         --tertiary-color:   #C9576C;
+
+        --grey-color:       #999999;
+        --grey-color-light:  #5e5e5e;
+        --grey-color-dark:  #cccccc;
     }
-} */
+
+    img {
+        filter: brightness(.8) contrast(1.2);
+    }
+
+    .franklin-content .about a {
+        font-weight: 600;
+    }
+}
 
 /* ==================================================================
     DEFAULT FONT AND LAYOUT
@@ -70,9 +85,38 @@ body {
     padding-bottom: 40px;
 }
 
+p {
+    color: var(--text-color) !important;
+}
+
+p.institution {
+    color: var(--grey-color) !important;
+}
+
+/* ==================================================================
+    NAVBAR
+================================================================== */
+
 nav {
     background-color: var(--background-color) !important;
     font-family: var(--nav-font-family) !important;
+}
+
+nav a.navbar-brand {
+    font-weight: 500;
+    color: var(--tertiary-color) !important;
+}
+
+nav a.navbar-brand:hover {
+    color: var(--secondary-color) !important;
+}
+
+nav .nav-link {
+    color: var(--grey-color-dark) !important;
+}
+
+nav .nav-link:hover {
+    color: var(--grey-color-light) !important;
 }
 
 /* ==================================================================
@@ -86,7 +130,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  color: var(--text-color);
+  color: var(--text-color) !important;
   font-family: var(--title-font-family);
 }
 
@@ -119,20 +163,16 @@ h6 {
     color: var(--tertiary-color);
 }
 
-.franklin-content a:hover {
+.franklin-content .about a:hover {
     color: var(--secondary-color);
-    background-color: var(--primary-color);
     text-decoration: underline;
 }
 
-nav a.navbar-brand:hover {
-    color: var(--tertiary-color) !important;
-}
-
-nav .nav-link {
-    color: var(--grey-color) !important;
-}
-
-nav .nav-link:hover {
+a.back-to-top i {
     color: var(--grey-color-dark) !important;
+}
+
+.site-footer a {
+    color: inherit !important;
+    text-decoration: none;
 }
