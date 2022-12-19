@@ -12,6 +12,7 @@ if (prefersDarkScheme.matches) {
 btn.addEventListener("click", function () {
   if (prefersDarkScheme.matches) {
     document.querySelector(":root").classList.toggle("lightmode");
+    document.querySelector("img").classList.toggle("lightmode");
     if (currentTheme == "dark") {
       currentTheme = "light";
       lightmode_btn.style.display = "inline-block";
@@ -23,6 +24,7 @@ btn.addEventListener("click", function () {
     }
   } else {
     document.querySelector(":root").classList.toggle("darkmode");
+    document.querySelector("img").classList.toggle("darkmode");
     if (currentTheme == "dark") {
       currentTheme = "light";
       lightmode_btn.style.display = "inline-block";
