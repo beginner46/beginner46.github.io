@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Open+Sans&display=swap');
+
+/* TODO: collapable nav color fix, nav shadow as tertiary color, dark mode toggle button */
+
 /* ==================================================================
     VARIABLES
 ================================================================== */
@@ -20,7 +23,7 @@
   --text-color:       #363431;
   --primary-color:    #E1E5EA;
   --secondary-color:  #A7BBC7;
-  --tertiary-color:   #C9576C;
+  --tertiary-color:   #c9576c;
 
   --grey-color:       #999;
   --grey-color-light: #cccccc;
@@ -119,6 +122,21 @@ nav .nav-link:hover {
     color: var(--grey-color-light) !important;
 }
 
+nav .navbar-collapse {
+    background-color: var(--background-color) !important;
+}
+
+@media (max-width: 991px) {
+    nav {
+        box-shadow: none;
+    }
+    
+    nav .navbar-collapse {
+        background-color: var(--background-color) !important;
+        box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%) !important;;
+    }
+}
+
 /* ==================================================================
     TITLES
 ================================================================== */
@@ -170,6 +188,10 @@ h6 {
 
 a.back-to-top i {
     color: var(--grey-color-dark) !important;
+}
+
+.site-footer {
+    font-family: var(--mono-font-family);
 }
 
 .site-footer a {
