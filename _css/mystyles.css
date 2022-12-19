@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Open+Sans&display=swap');
 
-/* TODO: collapable nav color fix, nav shadow as tertiary color, dark mode toggle button */
-
 /* ==================================================================
     VARIABLES
 ================================================================== */
@@ -30,6 +28,26 @@
   --grey-color-dark:  #5e5e5e;
 }
 
+:root.darkmode {
+    --background-color: #343131;
+    --text-color:       #c9c7c3;
+    --primary-color:    #E1E5EA;
+    --secondary-color:  #A7BBC7;
+    --tertiary-color:   #C9576C;
+
+    --grey-color:       #999999;
+    --grey-color-light:  #5e5e5e;
+    --grey-color-dark:  #cccccc;
+}
+
+img.darkmode {
+    filter: brightness(.8) contrast(1.2);
+}
+
+.franklin-content .about a.darkmode {
+    font-weight: 600;
+}
+
 /* ==================================================================
     DARK MODE
 ================================================================== */
@@ -53,6 +71,26 @@
 
     .franklin-content .about a {
         font-weight: 600;
+    }
+
+    :root.lightmode {
+        --background-color: #FAF3F3;
+        --text-color:       #363431;
+        --primary-color:    #E1E5EA;
+        --secondary-color:  #A7BBC7;
+        --tertiary-color:   #c9576c;
+
+        --grey-color:       #999;
+        --grey-color-light: #cccccc;
+        --grey-color-dark:  #5e5e5e;
+    }
+
+    img.lightmode {
+        filter: brightness(1) contrast(1);
+    }
+
+    .franklin-content .about a.lightmode {
+        font-weight: 500;
     }
 }
 
