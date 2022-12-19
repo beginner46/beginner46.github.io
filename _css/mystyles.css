@@ -14,6 +14,7 @@
   --base-line-height: 1.5;
 
   --small-font-size:  calc(var(--base-font-size) * 0.7);
+  --large-font-size:  calc(var(--base-font-size) * 1.6);
 
   --spacing-unit:     30px;
 
@@ -48,6 +49,14 @@ img.darkmode {
     font-weight: 600;
 }
 
+.theme-toggle #darkmode-btn {
+    display: none;
+}
+
+.theme-toggle #lightmode-btn {
+    display: inline-block;
+}
+
 /* ==================================================================
     DARK MODE
 ================================================================== */
@@ -63,6 +72,14 @@ img.darkmode {
         --grey-color:       #999999;
         --grey-color-light:  #5e5e5e;
         --grey-color-dark:  #cccccc;
+    }
+
+    .theme-toggle #lightmode-btn {
+        display: none;
+    }
+
+    .theme-toggle #darkmode-btn {
+        display: inline-block;
     }
 
     img {
@@ -161,6 +178,19 @@ nav .nav-link:hover {
 }
 
 nav .navbar-collapse {
+    background-color: var(--background-color) !important;
+}
+
+nav .theme-toggle-wrapper {
+    z-index: 100;
+}
+
+nav .theme-toggle {
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    font-size: var(--large-font-size);
+    color: var(--gray-color) !important;
     background-color: var(--background-color) !important;
 }
 
