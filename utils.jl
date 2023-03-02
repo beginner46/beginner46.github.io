@@ -1,4 +1,25 @@
 using FranklinUtils
+using Dates
+
+# ----------------------- #
+# General utility methods #
+# ----------------------- #
+
+function hfun_format_date(params)
+    to_int = x -> parse(Int64, x)
+    year, month, day = map(to_int, params)
+    date = Date(year, month, day)
+    return "<span class=date>"*Dates.format(date, "d U, Y")*"</span>"
+end
+
+function hfun_special_icon(param)
+  type = param[1]
+  map = Dict("talk" => "fa fa-microphone-alt",
+             "workshop" => "fa fa-chalkboard-teacher",
+             "presentation" => "fa fa-chalkboard",
+  )
+  return "<i class=\"$(get(map, type, ""))\"></i>"
+end
 
 # ----------------------------------- #
 # Academic blocks // General elements #
