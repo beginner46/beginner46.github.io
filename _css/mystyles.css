@@ -42,7 +42,7 @@
 }
 
 img.darkmode {
-    filter: brightness(.8) contrast(1.2);
+    filter: brightness(0.9) contrast(1.1);
 }
 
 .theme-toggle #darkmode-btn {
@@ -79,7 +79,7 @@ img.darkmode {
     }
 
     img {
-        filter: brightness(.8) contrast(1.2);
+        filter: brightness(.9) contrast(1.1);
     }
 
     :root.lightmode {
