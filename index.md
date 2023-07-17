@@ -10,7 +10,7 @@
 
 @@col-12,col-lg-4,profile
 
-\img{"/assets/img/jaydev_jblpr.jpg", class="avatar avatar-circle", alt="{{fill author}}"}
+\img{"/assets/img/jaydev_jblpr2.jpg", class="avatar avatar-circle", alt="{{fill author}}"}
 \portrait{
   name="{{fill author}}",
   job="{{fill jobtitle}}",
@@ -26,14 +26,15 @@
 @@col-12,col-lg-8,about
 
 \begin{biography}{resume="/assets/Jaydev_Singh_Rao_CV.pdf"}
-  I am an undergraduate student at [IISER Bhopal](https://iiserb.ac.in) majoring in Electrical Engineering and Computer Science. My academic interests lie at the intersection of _Physics_ and _Computer Science_. I spend most of my time learning tools and techniques in these domains in order to work on problems that interest me.
+  I earned a Bachelor's degree in Electrical Engineering and Computer Science from [IISER Bhopal](https://iiserb.ac.in) in 2023. During my time at IISERB, I developed a strong academic interest in the intersection of _physics_ and _computer science_. As a result I enjoy working on computational problems in _statistical physics_ and the development of open source software aimed at research in this domain.
   
-  Right now I am focused on learning and using computational techniques to study problems in statistical physics. Along these lines I have been involved in work on:
-  - Monte-Carlo algorithms for studying the properties of classical spin systems.
-  - Application of classical spin systems to other problems due to their shared symmetries. 
+  A few interesting projects that I am working on or have got to work on in the past are:
+  - Dynamics of quantum traverse field Ising model in the scheme of perturbative renormalization group.
   - Open source development of a molecular dynamics library in Julia: [Molly.jl](https://github.com/JuliaMolSim/Molly.jl)
+  - Higher order susceptibilities in second order phase transitions and their application in aiding the search for QCD critical point.
+  - Study of nearest neighbor distances in the monte-carlo configurations of the clasical Ising and XY models.
 
-Apart from my academic life, my personal life consists of enjoying music, books, anime and company of good people.
+Apart from my academic life, my personal life consists of enjoying music, procrastinating at practicing flute and reading books, watching anime and being in the company of good people.
 \end{biography}
 
 \shortcv{
