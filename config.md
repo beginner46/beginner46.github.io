@@ -1,9 +1,9 @@
 +++
 author = "Jaydev Singh Rao"
 shortauthor = "Jaydev S. Rao"
-jobtitle = "Undergraduate student"
-affiliation = "IISER Bhopal"
-affiliation_link = "https://iiserb.ac.in/"
+jobtitle = "Student with a B.S. in EECS"
+affiliation = ""
+affiliation_link = ""
 twitter_user = "https://twitter.com/JaydevSR"
 github_user = "https://github.com/JaydevSR"
 

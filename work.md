@@ -17,12 +17,12 @@
 - **\style{color:var(--grey-color-dark)}{Statistics of nearest neighbor distances of the 2D Ising and XY model}** _(Supervised by Prof. Dr. Markus Heyl, Universität Augsburg, Germany)_.
   
   \twosidebox{This was a remote project in which I got to learn about classical spin models and how to generate configurations of such models using Monte-Carlo simulations. I used the Wolff cluster algorithm to study the second order phase transition of the classical 2D Ising model and the Kosterlitz-Thouless transition in the classical 2D XY model. We were also trying to understand the statistics of nearest neighbor distances of the configurations of these models at different temperatures. We obtained some general probabilitic bounds for the averages of such nearest neighbor distances and tried to relate these to the global properties of these models at a particular temperature such as the structure factor.}
+
 # Open Source Projects
 
 - **\style{color:var(--grey-color-dark)}{Contributor to Molly.jl, an open-source molecular dynamics library in Julia}**. Some funded project that I have worked on for this library are:
   - *(In Progress)* Improving performance on GPUs with improved kernels and neighbor lists. Funded by Julia Summer of Code 2023 with support from NumFOCUS.
   - *(Completed)* Implementation of Replica Exchange Molecular Dynamics (REMD) simulators. Funded by Google Summer of Code 2022.
-
 
 <!-- ------------------
       TALKS SECTION
