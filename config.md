@@ -32,3 +32,20 @@ website_url   = "https://jaydevsr.github.io/"
 \newcommand{\icon}[1]{~~~<i class="fas fa-~~~!#1~~~"></i>~~~}
 
 \newcommand{\style}[2]{~~~<span style="!#1">!#2</span>~~~}
+
+\newcommand{\twosidebox}[1]{
+    ~~~
+    <div style="
+            border-style: hidden hidden hidden solid;
+            border-image: 
+                linear-gradient(
+                    to bottom, 
+                    var(--tertiary-color), 
+                    rgba(0, 0, 0, 0)
+                ) 1 100%;
+            padding: 1em;
+            margin-top: 0.5em;">
+        !#1
+    </div>
+    ~~~
+}

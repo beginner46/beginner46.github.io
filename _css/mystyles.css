@@ -36,8 +36,8 @@
     --secondary-color:  #A7BBC7;
     --tertiary-color:   #C9576C;
 
-    --grey-color:       #999999;
-    --grey-color-light:  #5e5e5e;
+    --grey-color:       #9c9c9c;
+    --grey-color-light:  #505050;
     --grey-color-dark:  #cccccc;
 }
 
@@ -67,7 +67,7 @@ img.darkmode {
 
         --grey-color:       #999999;
         --grey-color-light:  #5e5e5e;
-        --grey-color-dark:  #cccccc;
+        --grey-color-dark:  #dbdbdb;
     }
 
     .theme-toggle #lightmode-btn {
@@ -91,7 +91,7 @@ img.darkmode {
 
         --grey-color:       #999;
         --grey-color-light: #cccccc;
-        --grey-color-dark:  #5e5e5e;
+        --grey-color-dark:  #4e4e4e;
     }
 
     img.lightmode {
