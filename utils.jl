@@ -9,23 +9,27 @@ function hfun_format_date(params)
     to_int = x -> parse(Int64, x)
     year, month, day = map(to_int, params)
     date = Date(year, month, day)
-    return "<span class=date>"*Dates.format(date, "d U, Y")*"</span>"
+    return "<span class=date>" * Dates.format(date, "d U, Y") * "</span>"
+end
+
+function hfun_date_now()
+    return "<span class=date>" * Dates.format(now(), "d U, Y") * "</span>"
 end
 
 function hfun_special_icon(param)
-  type = param[1]
-  map = Dict("talk" => "fa fa-microphone-alt",
-             "workshop" => "fa fa-chalkboard-teacher",
-             "presentation" => "fa fa-chalkboard",
-  )
-  return "<i class=\"$(get(map, type, ""))\"></i>"
+    type = param[1]
+    map = Dict("talk" => "fa fa-microphone-alt",
+        "workshop" => "fa fa-chalkboard-teacher",
+        "presentation" => "fa fa-chalkboard",
+    )
+    return "<i class=\"$(get(map, type, ""))\"></i>"
 end
 
 # ----------------------------------- #
 # Academic blocks // General elements #
 # ----------------------------------- #
 
-@env function section(md; name="", class="wg-$name",rowclass="")
+@env function section(md; name="", class="wg-$name", rowclass="")
     id = Franklin.refstring(name)
     return html("""
         <section id=\"$id\" class=\"home-section $class\">
@@ -51,7 +55,7 @@ end
 
 # Portrait block with a few optional fields: name, job title, social buttons
 @lx function portrait(; name="", job="", link="", linkname="",
-                     twitter="", gscholar="", github="", linkedin="")
+    twitter="", gscholar="", github="", linkedin="")
     io = IOBuffer()
     write(io, html("<div class=portrait-title>"))
     isempty(name) || write(io, html("<h2>$name</h2>"))
@@ -116,8 +120,8 @@ end
 
 # skill featurette
 @lx function skill(name, sub=""; img="", fa="",
-                   imgstyle="display:inline-block; width:56px;",
-                   fastyle="")
+    imgstyle="display:inline-block; width:56px;",
+    fastyle="")
     illustration = ""
     if !isempty(img)
         illustration = """<img style="$imgstyle" src="$img">"""
@@ -137,8 +141,8 @@ end
 
 # experience cards
 @lx function experience(; title="", company="", descr="",
-                          from="", to="", location="", active=false,
-                          first=active, last=false)
+    from="", to="", location="", active=false,
+    first=active, last=false)
     fill = ifelse(active, "exp-fill", "")
     # elements for the vertical bar with filled/unfilled pill
     # they are assembled depending on 'first' so that they can connect.
@@ -185,16 +189,28 @@ end
 end
 
 @lx function certificate(; title="", meta="", metalink="", date="", descr="",
-                           cert="See certificate", certlink="")
-    origin = ifelse(isempty(metalink), meta, """
-        <a href="$metalink" target=_blank rel=noopener>$meta</a>
-        """)
-    certificate = ifelse(isempty(certlink), "", """
-        <a class=card-link href="$certlink" target=_blank rel=noopener>$cert</a>
-        """)
-    description = ifelse(isempty(descr), "", """
-        <div class=card-text>$(Franklin.fd2html(descr, internal=true))</div>
-        """)
+    cert="See certificate", certlink="")
+    origin = ifelse(
+        isempty(metalink),
+        meta,
+        """
+<a href="$metalink" target=_blank rel=noopener>$meta</a>
+"""
+    )
+    certificate = ifelse(
+        isempty(certlink),
+        "",
+        """
+<a class=card-link href="$certlink" target=_blank rel=noopener>$cert</a>
+"""
+    )
+    description = ifelse(
+        isempty(descr),
+        "",
+        """
+<div class=card-text>$(Franklin.fd2html(descr, internal=true))</div>
+"""
+    )
     return html("""
         <div class="card experience course">
           <div class=card-body>
@@ -245,32 +261,38 @@ function all_posts()
             else
                 error("Dateformat $dateformat not supported, use 'post', 'year', or 'yearmonth'")
             end
-            
+
             date = pagevar(rpath, "pubdate")
             isnothing(date) && (date = Date("$yy-$mm-01"))
             push!(posts, rpath => date)
         end
     end
     # sort by chron order, most recent first
-    return sort(posts, by=(e->e.second), rev=true)
+    return sort(posts, by=(e -> e.second), rev=true)
 end
 
 function show_posts(posts; byyear=false)
     isempty(posts) && return ""
     curyear = year(posts[1].second)
     io = IOBuffer()
-    byyear && write(io, """
-        <div class="col-12 col-lg-4"><h1>$curyear</h1></div>
-        <div class="col-12 col-lg-8">
-        """)
+    byyear && write(
+        io,
+        """
+<div class="col-12 col-lg-4"><h1>$curyear</h1></div>
+<div class="col-12 col-lg-8">
+"""
+    )
     for post in posts
         if byyear && year(post.second) < curyear
             curyear = year(post.second)
-            write(io, """
-                </div>
-                <div class="col-12 col-lg-4"><h1>$curyear</h1></div>
-                <div class="col-12 col-lg-8">
-                """)
+            write(
+                io,
+                """
+          </div>
+          <div class="col-12 col-lg-4"><h1>$curyear</h1></div>
+          <div class="col-12 col-lg-8">
+          """
+            )
         end
         rpath = post.first
         title = pagevar(rpath, "title")
@@ -286,22 +308,25 @@ function show_posts(posts; byyear=false)
                 imgpath = "$imgpath"
             end
         end
-        write(io, """
-            <div class="media stream-item">
-              <div class=media-body>
-                <h3 class="article-title mb-0 mt-0"><a href="/$rpath">$title</a></h3>
-                <a href="/$rpath" class=summary-link>
-                  <div class=article-style>$summary</div>
-                </a>
-                <div class="stream-meta article-metadata">
-                  <div class=article-metadata><span class=article-date>Published on $date.</span>
-                  </div>
-                </div>
-              </div>
-              <div class=ml-3>
-              $(ifelse(isempty(imgpath), "", """<a href="/$rpath"><img src="$imgpath" alt="$title"></a>"""))
-              </div>
-            </div>""")
+        write(
+            io,
+            """
+      <div class="media stream-item">
+        <div class=media-body>
+          <h3 class="article-title mb-0 mt-0"><a href="/$rpath">$title</a></h3>
+          <a href="/$rpath" class=summary-link>
+            <div class=article-style>$summary</div>
+          </a>
+          <div class="stream-meta article-metadata">
+            <div class=article-metadata><span class=article-date>Published on $date.</span>
+            </div>
+          </div>
+        </div>
+        <div class=ml-3>
+        $(ifelse(isempty(imgpath), "", """<a href="/$rpath"><img src="$imgpath" alt="$title"></a>"""))
+        </div>
+      </div>"""
+        )
     end
     return String(take!(io))
 end

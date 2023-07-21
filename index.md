@@ -25,7 +25,7 @@
 <!-- RIGHT COLUMN -->
 @@col-12,col-lg-8,about
 
-\begin{biography}{resume="/assets/Jaydev_Singh_Rao_CV.pdf"}
+\begin{biography}{resume=""}
   I earned a Bachelor's degree in Electrical Engineering and Computer Science from [IISER Bhopal](https://iiserb.ac.in) in 2023. During my time at IISERB, I developed a strong academic interest in the intersection of _physics_ and _computer science_. As a result I enjoy working on computational problems in _statistical physics_ and the development of open source software aimed at research in this domain.
   
   A few interesting projects that I am working on or have got to work on in the past are:
@@ -36,6 +36,8 @@
 
 Apart from my academic life, my personal life consists of enjoying music, procrastinating at practicing flute and reading books, watching anime and being in the company of good people.
 \end{biography}
+
+I can be contacted by email at jaydevsrao α gmail ∘ com
 
 \shortcv{
   interests=["Statistical Physics", "Computational Physics", "Algorithms", "Open Source Scientific Software"],
