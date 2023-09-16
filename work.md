@@ -8,7 +8,7 @@
 
 - **\style{color:var(--grey-color-dark)}{Dynamics of quantum traverse field Ising model}** _(Supervised by Prof. Dr. Markus Heyl, Universität Augsburg, Germany)_.
   
-  \twosidebox{In presence of long range interactions among the spins in a traverse-field Ising model, it is not possible to obtain a good analytic description of it's dynamical properties. We aim to use a perturbative renormalization group technique based on the strong-disorder renormalization group (SDRG) to obtain time evolution of spins and their correlators for this model. This has possible applications to understand the entanglement dynamics and glassy behaviour of systems of Rydberg atoms. This project is supported by funding from the DAAD-WISE scholarship programme.}
+  \twosidebox{In presence of long range interactions among the spins in a traverse-field Ising model, it is not possible to obtain a good analytic description of it's dynamical properties. We aim to use a perturbative renormalization group technique based on the strong-disorder renormalization group (SDRG) to obtain time evolution of spins and their correlators for this model. This has possible applications to understand the entanglement dynamics and glassy behaviour of systems of Rydberg atoms. This project was supported by funding from the DAAD-WISE scholarship programme.}
 
 - **\style{color:var(--grey-color-dark)}{Higher order susceptibilities of the 2D 3-state Potts model}** _(Supervised by Prof. Rajiv V. Gavai, IISER Bhopal, India)_.
   

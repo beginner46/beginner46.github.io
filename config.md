@@ -1,7 +1,7 @@
 +++
 author = "Jaydev Singh Rao"
 shortauthor = "Jaydev S. Rao"
-jobtitle = "Student with a B.S. in EECS"
+jobtitle = "PG student @ University Of Cambridge"
 affiliation = ""
 affiliation_link = ""
 twitter_user = "https://twitter.com/JaydevSR"

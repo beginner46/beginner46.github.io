@@ -26,7 +26,7 @@
 @@col-12,col-lg-8,about
 
 \begin{biography}{resume=""}
-  I earned a Bachelor's degree in Electrical Engineering and Computer Science from [IISER Bhopal](https://iiserb.ac.in) in 2023. During my time at IISERB, I developed a strong academic interest in the intersection of _physics_ and _computer science_. As a result I enjoy working on computational problems in _statistical physics_ and the development of open source software aimed at research in this domain.
+  Currently, I am a postgraduate student studying Physics at the University of Cambridge. I earned a Bachelor's degree in Electrical Engineering and Computer Science from [IISER Bhopal](https://iiserb.ac.in) in 2023. An interest in physics and a professional degree in computer science have led me to explore and enjoy the intersection of both of these domains. At present, I believe I enjoy working on theoretical problems in _statistical physics_ and _quantum many body physics_ as well as the development of scientific software aimed at research in this domain.
   
   A few interesting projects that I am working on or have got to work on in the past are:
   - Dynamics of quantum traverse field Ising model in the scheme of perturbative renormalization group.
@@ -42,7 +42,8 @@ I can be contacted by email at jaydevsrao α gmail ∘ com
 \shortcv{
   interests=["Statistical Physics", "Computational Physics", "Algorithms", "Open Source Scientific Software"],
   education=[
-    ("Bachelor of Science (2019-2023)", "Electrical Engineering and Computer Science", "IISER Bhopal")]
+    ("Master of Advance Studies (2023-2024)", "Physics", "University of Cambridge, UK")
+    ("Bachelor of Science (2019-2023)", "Electrical Engineering and Computer Science", "IISER Bhopal, India")]
 }
 
 @@ <!-- end of column -->
