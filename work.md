@@ -1,5 +1,12 @@
 @def title = "My Work | JaydevSR"
 
+<!-- ------------------
+      PUBLICATIONS SECTION
+     ------------------ -->
+# Publications/Preprints
+
+- R. V. Gavai, B. Mohanty, **J. S. Rao**, S. Saha, _Cumulants and Ordering of Their Ratios in 2D Potts Models: Lessons for QCD?_, [arXiv:2312.12130](http://arxiv.org/abs/2312.12130) [hep-lat]
+
 
 <!-- ------------------
       PROJECTS SECTION

@@ -1,11 +1,12 @@
 +++
 author = "Jaydev Singh Rao"
 shortauthor = "Jaydev S. Rao"
-jobtitle = "PG student @ University Of Cambridge"
-affiliation = ""
+jobtitle = "Postgraducate Student (MASt in Physics)"
+affiliation = "University Of Cambridge"
 affiliation_link = ""
 twitter_user = "https://twitter.com/JaydevSR"
 github_user = "https://github.com/JaydevSR"
+scholar_link = "https://scholar.google.com/citations?user=Ixrhe4gAAAAJ&hl=en&oi=sra"
 
 mintoclevel = 2
 ignore = ["node_modules/", "franklin", "franklin.pub"]
