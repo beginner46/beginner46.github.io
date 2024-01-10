@@ -1,7 +1,7 @@
 +++
 author = "Jaydev Singh Rao"
 shortauthor = "Jaydev S. Rao"
-jobtitle = "Postgraducate Student (MASt in Physics)"
+jobtitle = "Postgraduate Student (MASt in Physics)"
 affiliation = "University Of Cambridge"
 affiliation_link = ""
 twitter_user = "https://twitter.com/JaydevSR"
