@@ -26,11 +26,11 @@
 @@col-12,col-lg-8,about
 
 \begin{biography}{resume=""}
-  I am currently pursuing my master's degree in Physics at the University of Cambridge after having completed my Bachelor's degree in Electrical Engineering and Computer Science from IISER Bhopal in 2023. At present, I am devoted to developing my knowledge and skills in _theoretical condensed matter physics_ which is the broad (I mean really very broad) domain of research that I am most interested in. 
+  I am currently pursuing my master's degree in Physics at the University of Cambridge after having completed my bachelor's degree in Electrical Engineering and Computer Science from IISER Bhopal in 2023. I am passionate about developing my knowledge and skills in _theoretical condensed matter physics_, which is the broad (I mean really very broad) research domain I am most interested in. 
   
-  I am also enthusiastic about computer science, programming and the development of open source software aimed at scientific research. As for my research experience, I have worked on some interesting projects in the past ranging from quantum and classical spin models to molecular dynamics, for which more detailed information can be found on the ["my work"](/work/) page of this website.
+  I am also enthusiastic about computer science, programming, and developing open-source software for scientific research. As for my research experience, I have worked on some interesting projects in the past, ranging from quantum and classical spin models to molecular dynamics, for which you can find more detailed information on the ["my work"](/work/) page of this website.
 
-  Outside of the academic life and its struggles, I find solace in music, learning languages while dabbling with linguistic nuances, and a lot of times just procrastinating at practicing flute or reading books. Luckily, I also keep finding myself in the company of amazing people to learn from and share experiences with. Yes, I have sneaked in a complement to my friends and family, hehe. Anyway the last paragraph got a bit informal so if you have visited this page for "formal" reasons please omit the "informal" parts. Thanks.
+  Outside of academic life, I find solace in music, learning languages while dabbling with linguistic nuances, and, often, just procrastinating at practising flute or reading books. Luckily, I also keep finding myself in the company of amazing people to learn from and share experiences with. Yes, I have sneaked in a compliment to my friends and family. Anyway, the last paragraph got a bit informal, so if you have visited this page for "formal" reasons, please omit the "informal" parts. Thanks.
 \end{biography}
 
 If you want to reach out to me, I can be contacted through email at `jaydevsrao[α]gmail[∘]com`
