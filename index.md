@@ -10,7 +10,7 @@
 
 @@col-12,col-lg-4,profile
 
-\img{"/assets/img/jaydev_jblpr2.jpg", class="avatar avatar-circle", alt="{{fill author}}"}
+\img{"/assets/img/jaydev_portrait.jpeg", class="avatar avatar-circle", alt="{{fill author}}"}
 \portrait{
   name="{{fill author}}",
   job="{{fill jobtitle}}",
@@ -26,21 +26,17 @@
 @@col-12,col-lg-8,about
 
 \begin{biography}{resume=""}
-  Currently, I am a postgraduate student studying Physics at the University of Cambridge. I earned a Bachelor's degree in Electrical Engineering and Computer Science from [IISER Bhopal](https://iiserb.ac.in) in 2023. An interest in physics and a professional degree in computer science have led me to explore and enjoy the intersection of both of these domains. At present, I believe I enjoy working on theoretical problems in _statistical physics_ and _quantum many body physics_ as well as the development of scientific software aimed at research in this domain.
+  I am currently pursuing my master's degree in Physics at the University of Cambridge after having completed my Bachelor's degree in Electrical Engineering and Computer Science from IISER Bhopal in 2023. At present, I am devoted to developing my knowledge and skills in _theoretical condensed matter physics_ which is the broad (I mean really very broad) domain of research that I am most interested in. 
   
-  A few interesting projects that I am working on or have got to work on in the past are:
-  - Dynamics of quantum traverse field Ising model in the scheme of perturbative renormalization group.
-  - Open source development of a molecular dynamics library in Julia: [Molly.jl](https://github.com/JuliaMolSim/Molly.jl)
-  - Higher order susceptibilities in second order phase transitions and their application in aiding the search for QCD critical point.
-  - Study of nearest neighbor distances in the monte-carlo configurations of the clasical Ising and XY models.
+  I am also enthusiastic about computer science, programming and the development of open source software aimed at scientific research. As for my research experience, I have worked on some interesting projects in the past ranging from quantum and classical spin models to molecular dynamics, for which more detailed information can be found on the ["my work"](/work/) page of this website.
 
-Apart from my academic life, my personal life consists of enjoying music, procrastinating at practicing flute and reading books, watching anime and being in the company of good people.
+  Outside of the academic life and its struggles, I find solace in music, learning languages while dabbling with linguistic nuances, and a lot of times just procrastinating at practicing flute or reading books. Luckily, I also keep finding myself in the company of amazing people to learn from and share experiences with. Yes, I have sneaked in a complement to my friends and family, hehe. Anyway the last paragraph got a bit informal so if you have visited this page for "formal" reasons please omit the "informal" parts. Thanks. Smile.
 \end{biography}
 
-I can be contacted by email at jaydevsrao α gmail ∘ com
+If you want to reach out to me, I can be contacted through email at `jaydevsrao[α]gmail[∘]com`
 
 \shortcv{
-  interests=["Statistical Physics", "Computational Physics", "Algorithms", "Open Source Scientific Software"],
+  interests=["Statistical Physics", "Quantum Many-Body Physics", "Computational Physics", "Open Source Scientific Software"],
   education=[
     ("Master of Advance Studies (2023-2024)", "Physics", "University of Cambridge, UK")
     ("Bachelor of Science (2019-2023)", "Electrical Engineering and Computer Science", "IISER Bhopal, India")]
