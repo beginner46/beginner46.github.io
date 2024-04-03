@@ -28,8 +28,8 @@
 # Open Source Projects
 
 - **\style{color:var(--grey-color-dark)}{Contributor to Molly.jl, an open-source molecular dynamics library in Julia}**. Some funded project that I have worked on for this library are:
-  - *(In Progress)* Improving performance on GPUs with improved kernels and neighbor lists. Funded by Julia Summer of Code 2023 with support from NumFOCUS.
-  - *(Completed)* Implementation of Replica Exchange Molecular Dynamics (REMD) simulators. Funded by Google Summer of Code 2022.
+  - *(May-September, 2023)* Improving performance on GPUs with improved kernels and neighbor lists. Funded by Julia Summer of Code 2023 with support from NumFOCUS.
+  - *(June-September, 2022)* Implementation of Replica Exchange Molecular Dynamics (REMD) simulators. Funded by Google Summer of Code 2022.
 
 <!-- ------------------
       TALKS SECTION
