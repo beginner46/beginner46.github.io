@@ -30,7 +30,7 @@
   
   I am also enthusiastic about computer science, programming and the development of open source software aimed at scientific research. As for my research experience, I have worked on some interesting projects in the past ranging from quantum and classical spin models to molecular dynamics, for which more detailed information can be found on the ["my work"](/work/) page of this website.
 
-  Outside of the academic life and its struggles, I find solace in music, learning languages while dabbling with linguistic nuances, and a lot of times just procrastinating at practicing flute or reading books. Luckily, I also keep finding myself in the company of amazing people to learn from and share experiences with. Yes, I have sneaked in a complement to my friends and family, hehe. Anyway the last paragraph got a bit informal so if you have visited this page for "formal" reasons please omit the "informal" parts. Thanks. Smile.
+  Outside of the academic life and its struggles, I find solace in music, learning languages while dabbling with linguistic nuances, and a lot of times just procrastinating at practicing flute or reading books. Luckily, I also keep finding myself in the company of amazing people to learn from and share experiences with. Yes, I have sneaked in a complement to my friends and family, hehe. Anyway the last paragraph got a bit informal so if you have visited this page for "formal" reasons please omit the "informal" parts. Thanks.
 \end{biography}
 
 If you want to reach out to me, I can be contacted through email at `jaydevsrao[α]gmail[∘]com`
