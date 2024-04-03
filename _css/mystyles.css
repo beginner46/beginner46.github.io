@@ -5,12 +5,12 @@
 ================================================================== */
 
 :root {
-  --base-font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --title-font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --nav-font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --base-font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --title-font-family: "Fira Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --nav-font-family: "Fira Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mono-font-family: "Fira Code", 'Courier New', Courier, monospace;
   --base-font-size:   15px;
-  --base-font-weight: 400;
+  --base-font-weight: 450;
   --base-line-height: 1.5;
 
   --small-font-size:  calc(var(--base-font-size) * 0.7);
@@ -64,6 +64,7 @@ img.darkmode {
         --primary-color:    #E1E5EA;
         --secondary-color:  #A7BBC7;
         --tertiary-color:   #C9576C;
+        --code-color: #FFF;
 
         --grey-color:       #999999;
         --grey-color-light:  #5e5e5e;
@@ -88,6 +89,7 @@ img.darkmode {
         --primary-color:    #E1E5EA;
         --secondary-color:  #A7BBC7;
         --tertiary-color:   #c9576c;
+        --code-color: #000
 
         --grey-color:       #999;
         --grey-color-light: #cccccc;
@@ -231,6 +233,7 @@ h6 {
 
 .franklin-content a {
     color: var(--tertiary-color);
+    font-style: italic;
 }
 
 .franklin-content a:hover {
@@ -257,4 +260,11 @@ a.back-to-top i {
 .site-footer a {
     color: inherit !important;
     text-decoration: none;
+}
+
+code {
+    font-family: var(--mono-font-family);
+    font-weight: bolder;
+    color: var(--code-color);
+    background-color: var(--background-color);
 }
