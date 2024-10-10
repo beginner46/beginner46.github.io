@@ -1,12 +1,14 @@
 +++
 author = "Jaydev Singh Rao"
 shortauthor = "Jaydev S. Rao"
-jobtitle = "Postgraduate Student (MASt in Physics)"
-affiliation = "University Of Cambridge"
-affiliation_link = ""
+jobtitle = "PhD Student"
+affiliation = "Institute for Theoretical Physics, KU Leuven"
+affiliation_link = "https://fys.kuleuven.be/itf"
 twitter_user = "https://twitter.com/JaydevSR"
 github_user = "https://github.com/JaydevSR"
 scholar_link = "https://scholar.google.com/citations?user=Ixrhe4gAAAAJ&hl=en&oi=sra"
+orcid_link = "https://orcid.org/0009-0005-1994-6933"
+linkedin_user = "https://www.linkedin.com/in/jaydev-singh-rao-350b5b161/"
 
 mintoclevel = 2
 ignore = ["node_modules/", "franklin", "franklin.pub"]

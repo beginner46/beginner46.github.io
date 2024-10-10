@@ -18,7 +18,9 @@
   linkname="{{fill affiliation}}",
   twitter="{{fill twitter_user}}",
   gscholar="{{fill scholar_link}}",
-  github="{{fill github_user}}"
+  github="{{fill github_user}}",
+  linkedin="{{fill linkedin_user}}",
+  orcid="{{fill orcid_link}}"
 }
 @@ <!-- end of column -->
 
@@ -26,9 +28,11 @@
 @@col-12,col-lg-8,about
 
 \begin{biography}{resume=""}
-  I am currently pursuing my master's degree in Physics at the University of Cambridge after having completed my bachelor's degree in Electrical Engineering and Computer Science from IISER Bhopal in 2023. I am passionate about developing my knowledge and skills in _theoretical condensed matter physics_, which is the broad (I mean really very broad) research domain I am most interested in. 
+  I am a PhD student working under the supervision of Prof. Alessio Lerose at Institute for Theoretical Physics, KU Leuven. I am most passionate about research in _theoretical condensed matter physics_ with particular interest in non-equilibrium phenomena and dynamics in quantum many body systems.
   
   I am also enthusiastic about computer science, programming, and developing open-source software for scientific research. As for my research experience, I have worked on some interesting projects in the past, ranging from quantum and classical spin models to molecular dynamics, for which you can find more detailed information on the ["my work"](/work/) page of this website.
+
+  For my formal education, I completed my master's degree in Physics at the University of Cambridge in 2024 after having completed my bachelor's degree in Electrical Engineering and Computer Science from IISER Bhopal in 2023.
 
   Outside of academic life, I find solace in music, learning languages while dabbling with linguistic nuances, and, often, just procrastinating at practising flute or reading books. Luckily, I also keep finding myself in the company of amazing people to learn from and share experiences with. Yes, I have sneaked in a compliment to my friends and family. Anyway, the last paragraph got a bit informal, so if you have visited this page for "formal" reasons, please omit the "informal" parts. Thanks.
 \end{biography}
