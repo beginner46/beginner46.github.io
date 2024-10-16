@@ -54,7 +54,7 @@ end
 # ---------------------------------------- #
 
 # Portrait block with a few optional fields: name, job title, social buttons
-@lx function portrait(; name="", job="", link="", linkname="",
+@lx function portrait(; name="", job="", link="", linkname="", address="",
     twitter="", gscholar="", github="", linkedin="", orcid="")
     io = IOBuffer()
     write(io, html("<div class=portrait-title>"))
@@ -67,6 +67,8 @@ end
             write(io, html("""<h3><a href="$link" target=_blank rel=noopener><span>$linkname</span></a></h3>"""))
         end
     end
+    isempty(address) || write(io, html("<h3><i>$address</i></h3>"))
+
     if !all(isempty, (twitter, gscholar, github, linkedin, orcid))
         write(io, html("<ul class=network-icon aria-hidden=true>"))
         isempty(twitter) || write(io, html("""<li><a href="$twitter" target=_blank rel=noopener><i class="fab fa-twitter big-icon"></i></a></li>"""))
