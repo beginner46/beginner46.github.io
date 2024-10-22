@@ -5,11 +5,13 @@ jobtitle = "PhD Student"
 affiliation = "Institute for Theoretical Physics, KU Leuven"
 address = "06.09, Celestijnenlaan 200d box 2415,<br/> 3001 Heverlee, Belgium"
 affiliation_link = "https://fys.kuleuven.be/itf"
+affiliation_logo = "assets/img/kuleuven.png"
 twitter_user = "https://twitter.com/JaydevSR"
 github_user = "https://github.com/JaydevSR"
 scholar_link = "https://scholar.google.com/citations?user=Ixrhe4gAAAAJ&hl=en&oi=sra"
 orcid_link = "https://orcid.org/0009-0005-1994-6933"
 linkedin_user = "https://www.linkedin.com/in/jaydev-singh-rao-350b5b161/"
+
 
 mintoclevel = 2
 ignore = ["node_modules/", "franklin", "franklin.pub"]

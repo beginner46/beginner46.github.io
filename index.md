@@ -10,12 +10,13 @@
 
 @@col-12,col-lg-4,profile
 
-\img{"/assets/img/jaydev_portrait_cavendish.jpg", class="avatar avatar-circle", alt="{{fill author}}"}
+\img{"/assets/img/jaydev_kings_college.jpg", class="avatar avatar-circle", alt="{{fill author}}"}
 \portrait{
   name="{{fill author}}",
   job="{{fill jobtitle}}",
   link="{{fill affiliation_link}}",
   linkname="{{fill affiliation}}",
+  affil_logo="{{fill affiliation_logo}}",
   address="{{fill address}}",
   twitter="{{fill twitter_user}}",
   gscholar="{{fill scholar_link}}",
@@ -35,10 +36,10 @@
 
   For my formal education, I completed my master's degree in Physics at the University of Cambridge in 2024 after having completed my bachelor's degree in Electrical Engineering and Computer Science from IISER Bhopal in 2023.
 
-  Outside of academic life, I find solace in music, learning languages while dabbling with linguistic nuances, and, often, just procrastinating at practising flute or reading books. Luckily, I also keep finding myself in the company of amazing people to learn from and share experiences with. Yes, I have sneaked in a compliment to my friends and family. Anyway, the last paragraph got a bit informal, so if you have visited this page for "formal" reasons, please omit the "informal" parts. Thanks.
+  Outside of academic life, I find solace in music, learning languages while dabbling with linguistic nuances, and, often, just procrastinating at practising flute or reading books. I have also recently developed a strong liking to travelling and experience new places and cultures. It's quite possible that I'll be roaming the world in the future, stay tuned for that \*winks uncharacteristically\*. 
+  
+  If you're here, there is a significant probability that you want to contact me. If so, I can be contacted through email at `jaydevsingh.rao[α]kuleuven[∘]be` for work or `jaydevsrao[α]gmail[∘]com` for non-work.
 \end{biography}
-
-If you want to reach out to me, I can be contacted through email at `jaydevsingh.rao[α]kuleuven[∘]be` for work or `jaydevsrao[α]gmail[∘]com` for non-work.
 
 \shortcv{
   interests=["Statistical Physics", "Quantum Many-Body Physics", "Computational Physics", "Open Source Scientific Software"],

@@ -268,3 +268,15 @@ code {
     color: var(--code-color);
     background-color: var(--background-color);
 }
+
+/* ==================================================================
+    Images
+================================================================== */
+
+img.affil_logo {
+    margin: auto;
+    margin-top: -0.8em;
+    margin-bottom: 1.5em;
+    width: 10em;
+    height: auto;
+}
