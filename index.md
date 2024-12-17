@@ -1,4 +1,4 @@
-@def title = "Home | JaydevSR"
+@def title = "Home | Shashank Singh"
 
 <!-- -----------------
      BIOGRAPHY SECTION
