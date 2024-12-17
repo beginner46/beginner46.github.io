@@ -24,11 +24,11 @@
 
 \begin{biography}{resume=""}
 
- I am Shashank Singh. I graduted with a BS in Data Science and Engineering from IISER-Bhopal. Post that I worked at Nomura as an analyst, where I realised my interest lies in something more theoretical For more visit ["my work"](/work/). I am currently exploring Statistics and AI research. I want to develop theoretical models for AI and planning and I love solving math problems. I will be applying to grad school for Fall'25. 
+ I am Shashank Singh. I graduted with a BS in Data Science and Engineering from IISER-Bhopal. Post that I worked at Nomura as an analyst, where I realised my interest lies in something more theoretical. For more visit ["my work"](/work/). I am currently exploring Statistics and AI research. I want to develop theoretical models for AI and planning and I love solving math problems. I will be applying to grad school for Fall'25. 
   
   I am also enthusiastic about computer science, programming, and developing open-source software for scientific research. I also indulge in anime and mystery/horror movies.
  
-  I am a big fan of writing letters to each other though that's old and a slow, feel free to contact me through email at `shashanks.iiserb[α]gmail[∘]com`.
+  I am a big fan of writing letters since that's old and slow, feel free to contact me through my email at `shashanks.iiserb[α]gmail[∘]com`.
 \end{biography}
 
 \shortcv{
