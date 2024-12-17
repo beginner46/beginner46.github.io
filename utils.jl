@@ -54,8 +54,8 @@ end
 # ---------------------------------------- #
 
 # Portrait block with a few optional fields: name, job title, social buttons
-@lx function portrait(; name="", job="", link="", linkname="", affil_logo="", address="",
-    twitter="", gscholar="", github="", linkedin="", orcid="")
+@lx function portrait(; name="", link="", linkname="",
+    twitter="", github="", linkedin="")
     io = IOBuffer()
     write(io, html("<div class=portrait-title>"))
     isempty(name) || write(io, html("<h2 style='margin-bottom: 1em;'>$name</h2>"))
