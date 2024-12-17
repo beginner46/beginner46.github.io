@@ -1,3 +1,3 @@
 # Personal Website
 
-## [Link](https://jaydevsr.github.io)
+## [Link](https://beginner46.github.io/)
