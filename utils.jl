@@ -54,8 +54,7 @@ end
 # ---------------------------------------- #
 
 # Portrait block with a few optional fields: name, job title, social buttons
-@lx function portrait(; name="", link="", linkname="",
-    twitter="", github="", linkedin="")
+@lx function portrait(; name=””, twitter=””, github=””, linkedin=””, )
     io = IOBuffer()
     write(io, html("<div class=portrait-title>"))
     isempty(name) || write(io, html("<h2 style='margin-bottom: 1em;'>$name</h2>"))
@@ -70,13 +69,13 @@ end
     isempty(address) || write(io, html("<h3><i>$address</i></h3>"))
     isempty(affil_logo) || write(io, html("<img src=$affil_logo alt='affiliation logo' class=affil_logo>"))
 
-    if !all(isempty, (twitter, gscholar, github, linkedin, orcid))
+    if !all(isempty, (twitter, github, linkedin))
         write(io, html("<ul class=network-icon aria-hidden=true>"))
         isempty(twitter) || write(io, html("""<li><a href="$twitter" target=_blank rel=noopener><i class="fab fa-twitter big-icon"></i></a></li>"""))
-        isempty(gscholar) || write(io, html("""<li><a href="$gscholar" target=_blank rel=noopener><i class="fas fa-graduation-cap big-icon"></i></a></li>"""))
+        #isempty(gscholar) || write(io, html("""<li><a href="$gscholar" target=_blank rel=noopener><i class="fas fa-graduation-cap big-icon"></i></a></li>"""))
         isempty(github) || write(io, html("""<li><a href="$github" target=_blank rel=noopener><i class="fab fa-github big-icon"></i></a></li>"""))
         isempty(linkedin) || write(io, html("""<li><a href="$linkedin" target=_blank rel=noopener><i class="fab fa-linkedin big-icon"></i></a></li>"""))
-        isempty(orcid) || write(io, html("""<li><a href="$orcid" target=_blank rel=noopener><i class="fab fa-orcid big-icon"></i></a></li>"""))
+        #isempty(orcid) || write(io, html("""<li><a href="$orcid" target=_blank rel=noopener><i class="fab fa-orcid big-icon"></i></a></li>"""))
         write(io, html("</ul>"))
     end
     write(io, html("</div>"))
