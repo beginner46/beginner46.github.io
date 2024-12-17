@@ -26,11 +26,7 @@ website_descr = "Personal homepage of Shashank Singh."
 website_url   = "https://beginner46.github.io/"
 +++
 
-\newcommand{\callout}[1]{~~~<div class="alert alert-note"><div>~~~#1~~~</div></div>~~~}
 
-\newcommand{\icon}[1]{~~~<i class="fas fa-~~~!#1~~~"></i>~~~}
-
-\newcommand{\style}[2]{~~~<span style="!#1">!#2</span>~~~}
 
 \newcommand{\twosidebox}[1]{
     ~~~
