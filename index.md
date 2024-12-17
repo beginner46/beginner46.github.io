@@ -14,15 +14,9 @@
 \portrait{
   name="{{fill author}}",
   job="{{fill jobtitle}}",
-  link="{{fill affiliation_link}}",
-  linkname="{{fill affiliation}}",
-  affil_logo="{{fill affiliation_logo}}",
-  address="{{fill address}}",
   twitter="{{fill twitter_user}}",
-  gscholar="{{fill scholar_link}}",
   github="{{fill github_user}}",
   linkedin="{{fill linkedin_user}}",
-  orcid="{{fill orcid_link}}"
 }
 @@ <!-- end of column -->
 
@@ -30,22 +24,18 @@
 @@col-12,col-lg-8,about
 
 \begin{biography}{resume=""}
-  I am a PhD student working under the supervision of Prof. Alessio Lerose at Institute for Theoretical Physics, KU Leuven. I am most passionate about research in _theoretical condensed matter physics_ with particular interest in non-equilibrium phenomena and dynamics in quantum many body systems.
-  
-  I am also enthusiastic about computer science, programming, and developing open-source software for scientific research. As for my research experience, I have worked on some interesting projects in the past, ranging from quantum and classical spin models to molecular dynamics, for which you can find more detailed information on the ["my work"](/work/) page of this website.
 
-  For my formal education, I completed my master's degree in Physics at the University of Cambridge in 2024 after having completed my bachelor's degree in Electrical Engineering and Computer Science from IISER Bhopal in 2023.
-
-  Outside of academic life, I find solace in music, learning languages while dabbling with linguistic nuances, and, often, just procrastinating at practising flute or reading books. I have also recently developed a strong liking to travelling and experience new places and cultures. It's quite possible that I'll be roaming the world in the future, stay tuned for that \*winks uncharacteristically\*. 
+ I am Shashank Singh. I graduted with a BS in Data Science and Engineering from IISER-Bhopal. Post that I worked at Nomura as an analyst, where I realised my interest lies in something more theoretical For more visit ["my work"](/work/). I am currently exploring Statistics and AI research. I want to develop theoretical models for AI and planning and I love solving math problems. I will be applying to grad school for Fall'25. 
   
-  If you're here, there is a significant probability that you want to contact me. If so, I can be contacted through email at `jaydevsingh.rao[α]kuleuven[∘]be` for work or `jaydevsrao[α]gmail[∘]com` for non-work.
+  I am also enthusiastic about computer science, programming, and developing open-source software for scientific research. I also indulge in anime and mystery/horror movies.
+ 
+  I am a big fan of writing letters to each other though that's old and a slow, feel free to contact me through email at `shashanks.iiserb[α]gmail[∘]com`.
 \end{biography}
 
 \shortcv{
-  interests=["Statistical Physics", "Quantum Many-Body Physics", "Computational Physics", "Open Source Scientific Software"],
+  interests=["Applied Maths", "Theoretical Machine Learning", "Finance", "AI for Planning"],
   education=[
-    ("Master of Advance Studies (2023-2024)", "Physics", "University of Cambridge, UK")
-    ("Bachelor of Science (2019-2023)", "Electrical Engineering and Computer Science", "IISER Bhopal, India")]
+    ("Bachelor of Science (2019-2023)", "Data Science and Engineering", "IISER Bhopal, India")]
 }
 
 @@ <!-- end of column -->
