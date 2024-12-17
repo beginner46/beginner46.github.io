@@ -10,7 +10,7 @@
 
 @@col-12,col-lg-4,profile
 
-\img{"/assets/img/jaydev_kings_college.jpg", class="avatar avatar-circle", alt="{{fill author}}"}
+\img{"/assets/img/c9973252-8212-4c74-8467-2d3e3a47156a.JPG", class="avatar avatar-circle", alt="{{fill author}}"}
 \portrait{
   name="{{fill author}}",
   job="{{fill jobtitle}}",
