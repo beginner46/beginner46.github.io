@@ -5,43 +5,57 @@
      ------------------ -->
 # Publications/Preprints
 
-- R. V. Gavai, B. Mohanty, **J. S. Rao**, S. Saha, _Cumulants and Ordering of Their Ratios in 2D Potts Models: Lessons for QCD?_, [arXiv:2312.12130](http://arxiv.org/abs/2312.12130) [hep-lat]
-
+- Comming soon....
 
 <!-- ------------------
       PROJECTS SECTION
      ------------------ -->
-# Research Projects
+# Work Experience
 
-- **\style{color:var(--grey-color-dark)}{Dynamics of quantum traverse field Ising model}** _(Supervised by Prof. Dr. Markus Heyl, Universität Augsburg, Germany)_.
+- **\style{color:var(--grey-color-dark)}{Global Risk Quant | Nomura Holdings | Mumbai, India}** 
   
-  \twosidebox{In presence of long range interactions among the spins in a traverse-field Ising model, it is not possible to obtain a good analytic description of it's dynamical properties. We aim to use a perturbative renormalization group technique based on the strong-disorder renormalization group (SDRG) to obtain time evolution of spins and their correlators for this model. This has possible applications to understand the entanglement dynamics and glassy behaviour of systems of Rydberg atoms. This project was supported by funding from the DAAD-WISE scholarship programme.}
+  \twosidebox{
+◦ Performed Credit Risk Modelling, applied valuation adjustments to manage counterparty credit risk, and posted
+initial margins for bilateral trades.
+◦ Implemented Credit VaR and VaR (Value at Risk) models to mitigate credit and market risks.
+◦ Performed Monte Carlo Simulations on internal data for scenario analysis of various risk factors to estimate VaR and expected shortfall.
+◦ Automated comprehensive Monthly Risk Reports (MRR) using SAP Business Objects.
+◦ MaintainedarobustManagementInformationSystem(MIS)forreal-timemonitoringofcounterpartyexposureand
+GMV limits, as per agreements between the firm and the client.
+◦ Led the automation of risk reporting system for the firm’s top 10 US hedge fund clients in the bond market, utilizing
+bloomberg data, Python for data processing, and Excel for dynamic visualizations.
+◦ Worked with specialized risk management tool, Risk Work Bench and proprietary systems, to enhance counterparty
+risk assessment, streamline reporting processes, and improve overall risk monitoring efficiency.
+◦ Developed a centralized risk dashboard and margin quoting framework using SAP Business Objects, Risk Work
+Bench, Python and Excel for selected OTC (Over the counter) trades.
+◦ Developed a credit stress testing tool that can provide stressed KPIs based on user-defined securities and stress sce-
+narios, using Python.}
 
-- **\style{color:var(--grey-color-dark)}{Higher order susceptibilities of the 2D 3-state Potts model}** _(Supervised by Prof. Rajiv V. Gavai, IISER Bhopal, India)_.
+- **\style{color:var(--grey-color-dark)}{Risk Analyst, Intern | Nomura Holdings | Mumbai, India}** 
   
-  \twosidebox{In search of the QCD critical point, higher order baryonic susceptibilities (or cumulants) play a vital role as indicators of crossovers and phase-transitions. In this project we studied such equivalent higher order magnetic susceptiblities for classical spin models, particularly the 2D 3-state Potts model. We obtained scaling exponents of such quantities using finite size scaling theory and performed numerical verification of these results with cluster based Monte-Carlo simulations. We also looked into the ratios of higher order susceptibilites near the second order critical point to gain some qualitative insights about their behavior in critical regions.}
+  \twosidebox{
+◦ Performed the weekly and monthly VaR (Value at Risk) reporting to monitor GMV (Gross Market Value) of our client’s positions.
+◦ Automated the entire process of generating biweekly risk report for top-30 EMEA clients in Excel using Python.
+◦ Performedstress-testingtoevaluatetherobustnessoftheriskmanagementframeworkandalignthemwithindustry
+best practices.
+◦ Monitored and bench-marked greeks of forex options. Automated volatility calculation of forex market data.
+◦ Contributed to the design and improvement of daily risk reporting systems, ensuring accuracy and efficiency.}
 
-- **\style{color:var(--grey-color-dark)}{Statistics of nearest neighbor distances of the 2D Ising and XY model}** _(Supervised by Prof. Dr. Markus Heyl, Universität Augsburg, Germany)_.
+- **\style{color:var(--grey-color-dark)}{Researcher | Worldquant Brain | Worldquant LLC. India}** 
   
-  \twosidebox{This was a remote project in which I got to learn about classical spin models and how to generate configurations of such models using Monte-Carlo simulations. I used the Wolff cluster algorithm to study the second order phase transition of the classical 2D Ising model and the Kosterlitz-Thouless transition in the classical 2D XY model. We were also trying to understand the statistics of nearest neighbor distances of the configurations of these models at different temperatures. We obtained some general probabilitic bounds for the averages of such nearest neighbor distances and tried to relate these to the global properties of these models at a particular temperature such as the structure factor.}
+  \twosidebox{◦ Performed comprehensive data analysis on large-scale financial datasets across various products, employing statis-
+tical methods to extract meaningful insights.
+◦ Developed trading strategies based on quantitative analysis, resulting in consistently profitable alpha signals.
+◦ Utilized deep learning and machine learning techniques to model and capture market trends in various regions spanning from USA to China.
+◦ Conducted research on market microstructure, devising algorithms and refining existing trading strategies. Thor- oughly backtested and analyzed performance to validate the effectiveness of developed approaches.
+◦ Deployed quant-trading strategies in production environment using C++.}
 
-# Open Source Projects
+# Projects
 
-- **\style{color:var(--grey-color-dark)}{Contributor to Molly.jl, an open-source molecular dynamics library in Julia}**. Some funded project that I have worked on for this library are:
-  - *(May-September, 2023)* Improving performance on GPUs with improved kernels and neighbor lists. Funded by Julia Summer of Code 2023 with support from NumFOCUS.
-  - *(June-September, 2022)* Implementation of Replica Exchange Molecular Dynamics (REMD) simulators. Funded by Google Summer of Code 2022.
+- **\style{color:var(--grey-color-dark)}{Allocation problem using Genetic Algorithm}**.
+  \twosidebox{◦ Leveraged genetic algorithm to optimize fire station locations in Mumbai based on travel time.
+◦ Developed a demand-based vehicle allocation system for fire stations using multi-criteria decision analysis.
+◦ Designedscalableemergencyresponseplanningsolutionreducingresponsetimesthroughoptimalfacilityplacement. ◦ Visualised the location of various points using the shape file data.}
 
-<!-- ------------------
-      TALKS SECTION
-     ------------------ -->
-# Talks, Presentations and Workshops
 
-\style{color:gray}{<b>Legend</b>: {{special_icon "talk"}} = Talk, {{special_icon "presentation"}} = Presentation, {{special_icon "workshop"}} = Workshop}
 
-## 2023
-- {{special_icon "presentation"}}  *{{format_date 2023 3 25}}*,  **\style{color:var(--grey-color-dark)}{A closer look at the critical fluctuations of 3-state Potts model}** at \style{color: var(--grey-color-dark)}{In-house Physics Symposium}, Department of Physics, IISER, Bhopal, India.
-
-- {{special_icon "workshop"}}  *{{format_date 2023 1 29}}*,  **\style{color:var(--grey-color-dark)}{Introduction to Git and GitHub for Project Management and Open Source Development}** at IISER, Bhopal, India. [[Material](https://github.com/JaydevSR/intro-git-github-iiserb)]
-
-## 2022
-- {{special_icon "talk"}}  *{{format_date 2022 10 30}}*, **\style{color:var(--grey-color-dark)}{What is GSoC all about? Plus, my project, experience and tips}** at [IISER Bhopal](https://www.iiserb.ac.in/), Bhopal, India. [[Material](https://github.com/JaydevSR/GSoC_Interaction_IISERB)]
