@@ -1,16 +1,9 @@
 +++
-author = "Jaydev Singh Rao"
-shortauthor = "Jaydev S. Rao"
-jobtitle = "PhD Student"
-affiliation = "Institute for Theoretical Physics, KU Leuven"
-address = "06.09, Celestijnenlaan 200d box 2415,<br/> 3001 Heverlee, Belgium"
-affiliation_link = "https://fys.kuleuven.be/itf"
-affiliation_logo = "assets/img/kuleuven.png"
-twitter_user = "https://twitter.com/JaydevSR"
-github_user = "https://github.com/JaydevSR"
-scholar_link = "https://scholar.google.com/citations?user=Ixrhe4gAAAAJ&hl=en&oi=sra"
-orcid_link = "https://orcid.org/0009-0005-1994-6933"
-linkedin_user = "https://www.linkedin.com/in/jaydev-singh-rao-350b5b161/"
+author = "Shashank Singh"
+shortauthor = "Shashank Singh"
+twitter_user = "https://x.com/si4143"
+github_user = "https://github.com/beginner46"
+linkedin_user = "https://www.linkedin.com/in/shashank-singh-27366b179/"
 
 
 mintoclevel = 2
@@ -28,9 +21,9 @@ hasmermaid = false
 # - `"post"`: posts/name-of-post.md
 dateformat = "yearmonth"
 # RSS setup
-website_title = "Jaydev Singh Rao | Homepage"
-website_descr = "Personal homepage of Jaydev Singh Rao."
-website_url   = "https://jaydevsr.github.io/"
+website_title = "Shashank Singh | Homepage"
+website_descr = "Personal homepage of Shashank Singh."
+website_url   = "https://beginner46.github.io/"
 +++
 
 \newcommand{\callout}[1]{~~~<div class="alert alert-note"><div>~~~#1~~~</div></div>~~~}
